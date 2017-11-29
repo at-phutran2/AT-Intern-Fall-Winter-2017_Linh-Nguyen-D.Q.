@@ -61,31 +61,31 @@ header {
               text-decoration: none; }
               header nav .middle-nav .middle-nav-left ul li a:hover, header nav .middle-nav .middle-nav-left ul li a.active {
                 color: #3498db; }
-      header nav .middle-nav .middle-nav-right {
-        text-align: right;
-        padding: 0; }
-        header nav .middle-nav .middle-nav-right ul {
-          margin: 0;
-          padding: 0;
-          list-style: none; }
-          header nav .middle-nav .middle-nav-right ul li {
-            display: inline-block;
-            padding: 5px; }
-            header nav .middle-nav .middle-nav-right ul li button {
-              width: 32px;
-              height: 32px;
-              background-color: #fff;
-              border-radius: 100%;
-              outline: none; }
-            header nav .middle-nav .middle-nav-right ul li .facebook {
-              color: #3F60B4;
-              border: 1px solid #3F60B4; }
-            header nav .middle-nav .middle-nav-right ul li .google {
-              color: #F03F34;
-              border: 1px solid #F03F34; }
-            header nav .middle-nav .middle-nav-right ul li .youtube {
-              color: #FF0000;
-              border: 1px solid #FF0000; }
+        header nav .middle-nav .middle-nav-left .middle-nav-right {
+          text-align: right;
+          padding: 0; }
+          header nav .middle-nav .middle-nav-left .middle-nav-right ul {
+            margin: 0;
+            padding: 0;
+            list-style: none; }
+            header nav .middle-nav .middle-nav-left .middle-nav-right ul li {
+              display: inline-block;
+              padding: 5px; }
+              header nav .middle-nav .middle-nav-left .middle-nav-right ul li button {
+                width: 32px;
+                height: 32px;
+                background-color: #fff;
+                border-radius: 100%;
+                outline: none; }
+              header nav .middle-nav .middle-nav-left .middle-nav-right ul li .facebook {
+                color: #3F60B4;
+                border: 1px solid #3F60B4; }
+              header nav .middle-nav .middle-nav-left .middle-nav-right ul li .google {
+                color: #F03F34;
+                border: 1px solid #F03F34; }
+              header nav .middle-nav .middle-nav-left .middle-nav-right ul li .youtube {
+                color: #FF0000;
+                border: 1px solid #FF0000; }
     header nav .bottom-nav {
       height: 130px;
       border-bottom: 1px solid #95a5a6;

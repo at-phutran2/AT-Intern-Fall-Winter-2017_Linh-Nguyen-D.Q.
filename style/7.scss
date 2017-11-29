@@ -78,35 +78,35 @@ header {
             }
           }
         }
-      }
-      .middle-nav-right {
-        text-align: right;
-        padding: 0;
-        ul {
-          margin: 0;
+        .middle-nav-right {
+          text-align: right;
           padding: 0;
-          list-style: none;
-          li {
-            display: inline-block;
-            padding: 5px;
-            button {
-              width: 32px;
-              height: 32px;
-              background-color: #fff;
-              border-radius: 100%;
-              outline: none;
-            }
-            .facebook {
-              color: #3F60B4;
-              border: 1px solid #3F60B4;
-            }
-            .google {
-              color:#F03F34;
-              border: 1px solid #F03F34;
-            }
-            .youtube {
-              color: #FF0000;
-              border: 1px solid #FF0000;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+              display: inline-block;
+              padding: 5px;
+              button {
+                width: 32px;
+                height: 32px;
+                background-color: #fff;
+                border-radius: 100%;
+                outline: none;
+              }
+              .facebook {
+                color: #3F60B4;
+                border: 1px solid #3F60B4;
+              }
+              .google {
+                color:#F03F34;
+                border: 1px solid #F03F34;
+              }
+              .youtube {
+                color: #FF0000;
+                border: 1px solid #FF0000;
+              }
             }
           }
         }
