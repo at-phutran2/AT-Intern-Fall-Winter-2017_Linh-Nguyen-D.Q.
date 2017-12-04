@@ -61,32 +61,32 @@ h6 {
   margin: 0;
   padding: 0; }
 
-header {
+.header {
   padding-top: 80px;
   position: relative; }
-  header .top-navbar {
+  .header .top-navbar {
     display: flex;
     align-items: center;
     color: #fff; }
-    header .top-navbar .logo {
+    .header .top-navbar .logo {
       max-height: 100px;
       padding-left: 0px;
       padding-right: 0px; }
-      header .top-navbar .logo img {
+      .header .top-navbar .logo img {
         width: 60px; }
-    header .top-navbar .title {
+    .header .top-navbar .title {
       transform: translate(-4%, 10%);
       line-height: 32px; }
-      header .top-navbar .title p {
+      .header .top-navbar .title p {
         margin: 0;
         font-size: 14px; }
-    header .top-navbar .social-icon {
+    .header .top-navbar .social-icon {
       text-align: right;
       padding-right: 0; }
-      header .top-navbar .social-icon ul li {
+      .header .top-navbar .social-icon ul li {
         padding: 5px;
         display: inline-block; }
-        header .top-navbar .social-icon ul li button {
+        .header .top-navbar .social-icon ul li button {
           border: none;
           background-color: #313941;
           color: #fff;
@@ -97,43 +97,43 @@ header {
           font-size: 18px;
           box-shadow: 3px 3px 5px #313941;
           transition: all 0.3s ease 0s; }
-          header .top-navbar .social-icon ul li button:hover {
+          .header .top-navbar .social-icon ul li button:hover {
             background-color: #2AD3D9; }
-  header nav {
+  .header nav {
     display: block;
     background-color: #66d1d7;
     margin-top: 55px;
     box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3); }
-    header nav ul {
+    .header nav ul {
       display: flex;
       align-items: center; }
-      header nav ul li {
+      .header nav ul li {
         border-left: 1px solid #91e5e9;
         border-right: 1px solid #37bdc6; }
-        header nav ul li:last-child {
+        .header nav ul li:last-child {
           float: none;
           border-right: none; }
-        header nav ul li:first-child {
+        .header nav ul li:first-child {
           border-left: none; }
-          header nav ul li:first-child a {
+          .header nav ul li:first-child a {
             padding: 22px 16px;
             font-size: 14px; }
-        header nav ul li a {
+        .header nav ul li a {
           display: block;
           padding: 28px 50px;
           color: #fff;
           text-decoration: none;
           transition: all 0.3s ease 0s;
           font-size: 13px; }
-          header nav ul li a:hover, header nav ul li a.active {
+          .header nav ul li a:hover, .header nav ul li a.active {
             background-color: #00BBC1; }
-        header nav ul li .navbar-form {
+        .header nav ul li .navbar-form {
           position: relative;
           display: flex;
           width: 245px;
           left: 20%;
           padding: 16px 0px; }
-          header nav ul li .navbar-form input {
+          .header nav ul li .navbar-form input {
             height: 40px;
             padding-right: 40px;
             padding-left: 20px;
@@ -145,7 +145,7 @@ header {
             background-color: #00BBC1;
             width: 100%;
             font-size: 18px; }
-          header nav ul li .navbar-form button {
+          .header nav ul li .navbar-form button {
             position: absolute;
             color: #fff;
             border: none;
@@ -154,10 +154,10 @@ header {
             left: 85%;
             top: 30%;
             cursor: pointer; }
-      header nav ul .dropdown {
+      .header nav ul .dropdown {
         position: relative;
         display: inline-block; }
-      header nav ul .dropdown-content {
+      .header nav ul .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
@@ -166,21 +166,21 @@ header {
         padding: 12px 0px;
         background-color: #66d1d7;
         z-index: 3; }
-        header nav ul .dropdown-content li {
+        .header nav ul .dropdown-content li {
           float: none;
           text-align: center;
           width: 100%;
           border: none; }
-          header nav ul .dropdown-content li a {
+          .header nav ul .dropdown-content li a {
             border: none;
             padding: 10px 0px; }
-            header nav ul .dropdown-content li a:hover {
+            .header nav ul .dropdown-content li a:hover {
               color: #000; }
-        header nav ul .dropdown-content .tooltip {
+        .header nav ul .dropdown-content .tooltip {
           position: relative;
           display: inline-block;
           text-align: center; }
-        header nav ul .dropdown-content .tooltip .tooltiptext {
+        .header nav ul .dropdown-content .tooltip .tooltiptext {
           visibility: hidden;
           display: none;
           width: 120px;
@@ -193,14 +193,14 @@ header {
           z-index: 3;
           top: -45px;
           left: 103%; }
-          header nav ul .dropdown-content .tooltip .tooltiptext ul {
+          .header nav ul .dropdown-content .tooltip .tooltiptext ul {
             display: block; }
-            header nav ul .dropdown-content .tooltip .tooltiptext ul li {
+            .header nav ul .dropdown-content .tooltip .tooltiptext ul li {
               display: block; }
-              header nav ul .dropdown-content .tooltip .tooltiptext ul li a:hover {
+              .header nav ul .dropdown-content .tooltip .tooltiptext ul li a:hover {
                 color: #D5BC57;
                 background-color: transparent; }
-        header nav ul .dropdown-content .tooltip .tooltiptext::after {
+        .header nav ul .dropdown-content .tooltip .tooltiptext::after {
           content: "";
           position: absolute;
           top: 50%;
@@ -209,48 +209,46 @@ header {
           border-width: 5px;
           border-style: solid;
           border-color: transparent black transparent transparent; }
-        header nav ul .dropdown-content .tooltip:hover .tooltiptext {
+        .header nav ul .dropdown-content .tooltip:hover .tooltiptext {
           visibility: visible;
           display: block; }
-      header nav ul .dropdown:hover .dropdown-content {
+      .header nav ul .dropdown:hover .dropdown-content {
         display: block; }
 
-main .image-gallery {
+.main-content .image-gallery {
   position: relative;
   z-index: 2; }
-  main .image-gallery .carousel-inner .item {
-    height: auto; }
-    main .image-gallery .carousel-inner .item img {
-      box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3);
-      filter: grayscale(40%);
-      width: 100%; }
-      main .image-gallery .carousel-inner .item img::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: url(../img/top-shadow.png) repeat-x;
-        top: 0;
-        left: 0;
-        z-index: 3; }
-    main .image-gallery .carousel-inner .item .carousel-caption {
-      display: block;
+  .main-content .image-gallery .carousel-inner .item img {
+    box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3);
+    filter: grayscale(40%);
+    width: 100%; }
+    .main-content .image-gallery .carousel-inner .item img::after {
+      content: "";
       position: absolute;
-      top: 25%;
-      left: 13%;
-      font-weight: 100;
-      text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif; }
-      main .image-gallery .carousel-inner .item .carousel-caption .item-title {
-        color: #fff;
-        font-weight: 600; }
-      main .image-gallery .carousel-inner .item .carousel-caption .item-description {
-        color: #30D4DA;
-        font-size: 45px;
-        margin: 0;
-        line-height: 35px;
-        font-weight: 100; }
-  main .image-gallery button {
+      width: 100%;
+      height: 100%;
+      background: url(../img/top-shadow.png) repeat-x;
+      top: 0;
+      left: 0;
+      z-index: 3; }
+  .main-content .image-gallery .carousel-inner .item .carousel-caption {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif; }
+    .main-content .image-gallery .carousel-inner .item .carousel-caption .item-title {
+      color: #fff;
+      font-weight: 600; }
+    .main-content .image-gallery .carousel-inner .item .carousel-caption .item-description {
+      color: #30D4DA;
+      font-size: 45px;
+      margin: 0;
+      line-height: 35px;
+      font-weight: 100; }
+  .main-content .image-gallery button {
     font-size: 30px;
     background-color: #fff;
     cursor: pointer;
@@ -261,45 +259,45 @@ main .image-gallery {
     top: 50%;
     left: 13%;
     transition: all 0.3s ease 0s; }
-    main .image-gallery button:hover {
+    .main-content .image-gallery button:hover {
       background-color: #E0C445;
       color: #fff; }
-  main .image-gallery .carousel-right {
+  .main-content .image-gallery .carousel-right {
     left: 17%; }
-main .feature {
+.main-content .feature {
   display: block;
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
   position: relative; }
-  main .feature .feature-header {
+  .main-content .feature .feature-header {
     background-color: #f2f2f2;
     background-image: linear-gradient(to bottom, #ffffff, #dedede);
     background-repeat: repeat-x;
     padding: 10px 30px;
     box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3); }
-    main .feature .feature-header h4 {
+    .main-content .feature .feature-header h4 {
       font-weight: 100; }
-  main .feature .feature-body {
+  .main-content .feature .feature-body {
     background-color: #2D333A;
     padding: 15px 20px 25px 20px;
     box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3); }
-    main .feature .feature-body ul {
+    .main-content .feature .feature-body ul {
       margin: 0 auto;
       display: flex;
       width: 100%; }
-      main .feature .feature-body ul li {
+      .main-content .feature .feature-body ul li {
         background-color: #fff;
         margin: 10px;
         display: flex;
         width: 20%;
         transition: all 0.3s ease 0s; }
-        main .feature .feature-body ul li:hover {
+        .main-content .feature .feature-body ul li:hover {
           background-color: #E0C445; }
-        main .feature .feature-body ul li a {
+        .main-content .feature .feature-body ul li a {
           display: block;
           padding: 5px 5px 0px 5px;
           overflow: hidden; }
-  main .feature button {
+  .main-content .feature button {
     font-size: 30px;
     background-color: #fff;
     cursor: pointer;
@@ -310,78 +308,78 @@ main .feature {
     position: absolute;
     transition: all 0.3s ease 0s;
     top: 50%; }
-    main .feature button:hover {
+    .main-content .feature button:hover {
       background-color: #E0C445;
       color: #fff; }
-  main .feature .feature-right {
+  .main-content .feature .feature-right {
     left: 91.5%; }
-  main .feature .feature-left {
+  .main-content .feature .feature-left {
     left: 4.8%; }
-main .status-publish {
+.main-content .status-publish {
   margin-top: 30px; }
-  main .status-publish .status-publish-content .card-list .col-md-3 {
+  .main-content .status-publish .status-publish-content .card-list .col-md-3 {
     display: flex;
     justify-content: center;
     padding: 10px; }
-    main .status-publish .status-publish-content .card-list .col-md-3:first-child .card-item {
+    .main-content .status-publish .status-publish-content .card-list .col-md-3:first-child .card-item {
       background: #7ed7dd;
       background-color: #71cad0;
       background-image: linear-gradient(to bottom, #7ed7dd, #5db6bc);
       background-repeat: repeat-x; }
-      main .status-publish .status-publish-content .card-list .col-md-3:first-child .card-item button {
+      .main-content .status-publish .status-publish-content .card-list .col-md-3:first-child .card-item button {
         color: #7ed7dd; }
-    main .status-publish .status-publish-content .card-list .col-md-3:nth-child(2) .card-item {
+    .main-content .status-publish .status-publish-content .card-list .col-md-3:nth-child(2) .card-item {
       background: #7eddc1;
       background-color: #71d0b4;
       background-image: linear-gradient(to bottom, #7eddc1, #5ebca0);
       background-repeat: repeat-x; }
-      main .status-publish .status-publish-content .card-list .col-md-3:nth-child(2) .card-item button {
+      .main-content .status-publish .status-publish-content .card-list .col-md-3:nth-child(2) .card-item button {
         color: #7eddc1; }
-    main .status-publish .status-publish-content .card-list .col-md-3:nth-child(3) .card-item {
+    .main-content .status-publish .status-publish-content .card-list .col-md-3:nth-child(3) .card-item {
       background: #e1c96f;
       background-color: #d4bc62;
       background-image: linear-gradient(to bottom, #e1c96f, #c0a84e);
       background-repeat: repeat-x; }
-      main .status-publish .status-publish-content .card-list .col-md-3:nth-child(3) .card-item button {
+      .main-content .status-publish .status-publish-content .card-list .col-md-3:nth-child(3) .card-item button {
         color: #e1c96f; }
-    main .status-publish .status-publish-content .card-list .col-md-3:last-child .card-item {
+    .main-content .status-publish .status-publish-content .card-list .col-md-3:last-child .card-item {
       background: #d685a2;
       background-color: #c97895;
       background-image: linear-gradient(to bottom, #d685a2, #b56481);
       background-repeat: repeat-x; }
-      main .status-publish .status-publish-content .card-list .col-md-3:last-child .card-item button {
+      .main-content .status-publish .status-publish-content .card-list .col-md-3:last-child .card-item button {
         color: #d685a2; }
-    main .status-publish .status-publish-content .card-list .col-md-3 .card-item {
+    .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item {
       width: 100%;
       color: #fff;
       font-family: 'Open Sans', sans-serif;
       transition: all 600ms ease;
       opacity: 1; }
-      main .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-header {
+      .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-header {
         padding: 15px 35px; }
-        main .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-header h5 {
+        .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-header h5 {
           font-weight: 100;
           line-height: 25px; }
-      main .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content {
+      .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content {
         padding: 15px 35px;
         font-size: 14px; }
-        main .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content p {
+        .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content p {
           margin: 0;
           margin-bottom: 24px !important; }
-        main .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content button {
+        .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content button {
           border: none;
           background-color: #fff;
           padding: 10px 20px;
           font-weight: bold;
           cursor: pointer;
           transition: all 0.3s ease 0s; }
-          main .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content button:hover {
+          .main-content .status-publish .status-publish-content .card-list .col-md-3 .card-item .card-content button:hover {
             color: #fff;
             background-color: #2C333A; }
-main .poster {
+.main-content .poster {
   font-family: 'Open Sans', sans-serif;
   margin-top: 100px; }
-  main .poster button {
+  .main-content .poster button {
     font-weight: 600;
     background-color: #2C333A;
     color: #fff;
@@ -390,89 +388,89 @@ main .poster {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3); }
-    main .poster button:hover {
+    .main-content .poster button:hover {
       background-color: #00CED4; }
-  main .poster .newest-poster {
+  .main-content .poster .newest-poster {
     padding: 20px;
     padding-left: 0; }
-    main .poster .newest-poster h5, main .poster .newest-poster h6 {
+    .main-content .poster .newest-poster h5, .main-content .poster .newest-poster h6 {
       font-weight: 100; }
-    main .poster .newest-poster .title {
+    .main-content .poster .newest-poster .title {
       line-height: 35px;
       padding-bottom: 30px; }
-      main .poster .newest-poster .title h2 {
+      .main-content .poster .newest-poster .title h2 {
         color: #00CED4;
         font-weight: 600; }
-    main .poster .newest-poster .content {
+    .main-content .poster .newest-poster .content {
       margin-bottom: 30px; }
-      main .poster .newest-poster .content .poster-description p {
+      .main-content .poster .newest-poster .content .poster-description p {
         font-size: 14px;
         color: #787878; }
-      main .poster .newest-poster .content .poster-content {
+      .main-content .poster .newest-poster .content .poster-content {
         padding-top: 15px;
         font-size: 14px;
         color: #787878; }
-  main .poster .older-poster {
+  .main-content .poster .older-poster {
     padding: 10px; }
-    main .poster .older-poster .poster-card-item {
+    .main-content .poster .older-poster .poster-card-item {
       padding: 10px;
       margin-bottom: 30px; }
-      main .poster .older-poster .poster-card-item .title h5 {
+      .main-content .poster .older-poster .poster-card-item .title h5 {
         font-weight: 100;
         line-height: 25px; }
-      main .poster .older-poster .poster-card-item .content {
+      .main-content .poster .older-poster .poster-card-item .content {
         margin: 35px 0px 20px 0px;
         font-size: 14px;
         color: #787878; }
-      main .poster .older-poster .poster-card-item:first-child b {
+      .main-content .poster .older-poster .poster-card-item:first-child b {
         color: #71cad0; }
-      main .poster .older-poster .poster-card-item:nth-child(2) b {
+      .main-content .poster .older-poster .poster-card-item:nth-child(2) b {
         color: #71d0b4; }
-      main .poster .older-poster .poster-card-item:nth-child(3) b {
+      .main-content .poster .older-poster .poster-card-item:nth-child(3) b {
         color: #d4bc62; }
-      main .poster .older-poster .poster-card-item:last-child b {
+      .main-content .poster .older-poster .poster-card-item:last-child b {
         color: #c97895; }
 
-footer {
+.footer {
   background-color: #2C3239;
   padding-top: 100px;
   padding-bottom: 50px;
   font-family: 'Open Sans', sans-serif; }
-  footer .footer-left .footer-logo {
+  .footer .footer-left .footer-logo {
     display: flex;
     height: 50px; }
-    footer .footer-left .footer-logo img {
+    .footer .footer-left .footer-logo img {
       display: inline-block;
       padding-right: 10px; }
-    footer .footer-left .footer-logo .logo-title {
+    .footer .footer-left .footer-logo .logo-title {
       display: inline-block; }
-      footer .footer-left .footer-logo .logo-title h5 {
+      .footer .footer-left .footer-logo .logo-title h5 {
         color: #fff;
         display: inline;
         padding-right: 5px; }
-      footer .footer-left .footer-logo .logo-title span {
+      .footer .footer-left .footer-logo .logo-title span {
         color: #C7AF4A; }
-      footer .footer-left .footer-logo .logo-title p {
+      .footer .footer-left .footer-logo .logo-title p {
         color: #fff;
         font-size: 10px;
         margin: 0; }
-  footer .footer-right h5 {
+  .footer .footer-right h5 {
     font-weight: 100;
     color: #fff; }
-  footer .footer-right ul li {
+  .footer .footer-right ul li {
     margin-top: 10px; }
-    footer .footer-right ul li span {
+    .footer .footer-right ul li span {
       padding-right: 10px; }
-      footer .footer-right ul li span i {
+      .footer .footer-right ul li span i {
         color: #fff;
         padding: 0px 5px;
         background-color: #717171; }
-    footer .footer-right ul li a {
+    .footer .footer-right ul li a {
       text-decoration: none;
       font-size: 14px;
       color: #787878;
       transition: all 0.3s ease 0s; }
-      footer .footer-right ul li a:hover {
+      .footer .footer-right ul li a:hover {
         color: #C7AF4A; }
 
 .back-to-top {
