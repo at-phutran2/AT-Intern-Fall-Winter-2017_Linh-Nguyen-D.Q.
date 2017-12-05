@@ -67,9 +67,7 @@
     background-repeat: repeat-x;
     padding: 10px 30px;
     box-shadow: $box-shadow;
-    h4 {
-      font-weight: 100;
-    }      
+    font-weight: 100;
   }
   button {
     font-size: 30px;
@@ -261,6 +259,9 @@
     font-size: 14px;
     color: $grey-text;
   }
+  b {
+    display: block;
+  }
   &:first-child {
     b {
       color: $blue-color;
@@ -282,4 +283,3 @@
     }
   }
 }
-

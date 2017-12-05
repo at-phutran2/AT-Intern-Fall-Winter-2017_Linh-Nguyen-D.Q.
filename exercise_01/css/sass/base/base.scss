@@ -1,5 +1,5 @@
 body {
-	font-family: $font-content;
+  font-family: $font-content;
 }
 
 h1 { font-size: 40px; }
@@ -15,21 +15,21 @@ h5 { font-size: 20px; }
 h6 { font-size: 16px; }
 
 button {
-	cursor: pointer;
-	background-color: $grey-color;
-	color: #fff;
-	font-weight: 600;
-	border: none;
-	text-align: center;
-	box-shadow: $box-shadow;
-	transition: all 0.3s ease 0s;
-	outline: none;
+  cursor: pointer;
+  background-color: $grey-color;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  text-align: center;
+  box-shadow: $box-shadow;
+  transition: all 0.3s ease;
+  outline: none;
 }
 
 a {
-	text-decoration: none;
-	color: #fff;
-	transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease 0s;
 }
 
 img {
@@ -38,9 +38,9 @@ img {
 }
 
 p {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }

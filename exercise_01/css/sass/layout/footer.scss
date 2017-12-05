@@ -1,10 +1,10 @@
-.footer {
+footer {
   background-color: $grey-color;
   padding-top: 60px;
   padding-bottom: 30px;
 }
 .footer-logo {
-  display: flex;
+  display: flexbox(center);
   height: 50px;
   img {
     display: inline-block;
