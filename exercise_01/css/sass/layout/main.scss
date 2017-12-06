@@ -3,17 +3,17 @@
   z-index: 2;
   button {
     font-size: 30px;
-    background-color: #fff;
-    color: $grey-color;
+    background-color: map-get($color, white);
+    color: map-get($color, dark);
     padding: 7px 20px;
-    box-shadow:2px 2px 5px #000;
+    box-shadow:2px 2px 5px map-get($color, black);
     position: absolute;
     top: 50%;
     left: 13%;
     transition: all 0.3s ease 0s;
     &:hover {
-      background-color: #E0C445;
-      color: #fff;
+      background-color: map-get($color, gold);
+      color: map-get($color, white);
     }
   }
   .carousel-right {
@@ -45,11 +45,11 @@
     font-weight: 100;
     text-transform: uppercase;
     .item-title {
-      color: #fff;
+      color: map-get($color, white);
       font-weight: 600;
     }
     .item-description {
-      color: $blue-color;
+      color: map-get($color, blue);
       font-size: 45px;
       line-height: 35px;
       font-weight: 100;
@@ -62,24 +62,24 @@
   margin-top: 10px;
   position: relative;
   .feature-header {
-    background-color: #f2f2f2;
-    background-image: linear-gradient(to bottom,#ffffff,#dedede);
+    background-color: map-get($color, light);
+    background-image: linear-gradient(to bottom, map-get($color, white), map-get($color, c));
     background-repeat: repeat-x;
-    padding: 10px 30px;
+    padding: 20px 30px;
     box-shadow: $box-shadow;
     font-weight: 100;
   }
   button {
     font-size: 30px;
-    background-color: #fff;
-    color: $grey-color;
+    background-color: map-get($color, white);
+    color: map-get($color, dark);
     padding: 7px 20px;
-    box-shadow:2px 2px 5px #000;
+    box-shadow:2px 2px 5px map-get($color, black);
     position: absolute;
     top: 50%;
     &:hover {
-      background-color: $gold-color;
-      color: #fff;
+      background-color: map-get($color, gold);
+      color: map-get($color, white);
     }
   }
   .feature-right {
@@ -90,21 +90,23 @@
   }
 }
 .feature-body {
-  background-color: #2D333A;
+  background-color: map-get($color, dark);
   padding: 15px 20px 25px 20px;
   box-shadow: $box-shadow;
   ul {
     margin: 0 auto;
-    display: flex;
+    // display: flex;
+    @include flexbox();
     width: 100%;
     li {
-      background-color: #fff;
+      background-color: map-get($color, white);
       margin: 10px;
-      display: flex;
+      // display: flex;
+      @include flexbox();
       width: 20%;
       transition: all 0.3s ease 0s;
       &:hover {
-        background-color: $gold-color;
+        background-color: map-get($color, gold);
       }
     }
   }
@@ -120,58 +122,59 @@
 }
 .status-publish-content {
   .col-md-3 {
-    display: flex;
+    // display: flex;
+    @include flexbox();
     justify-content: center;
     padding: 10px;
     &:first-child {
       .card-item {
-        background: $blue-color;
-        background-color: #71cad0;
-        background-image: linear-gradient(to bottom,$blue-color,#5db6bc);
+        background: map-get($color, blue);
+        background-color: map-get($color, f);
+        background-image: linear-gradient(to bottom, map-get($color, blue), map-get($color, e));
         background-repeat: repeat-x;
       }
       button {
-        color: $blue-color;
+        color: map-get($color, blue);
       }
     }
     &:nth-child(2) {
       .card-item {
-        background: $green-color;
-        background-color: #71d0b4;
-        background-image: linear-gradient(to bottom,$green-color,#5ebca0);
+        background: map-get($color, green);
+        background-color: map-get($color, g);
+        background-image: linear-gradient(to bottom, map-get($color, green),map-get($color, h));
         background-repeat: repeat-x;
       }
       button {
-        color: $green-color;
+        color: map-get($color, green);
       }
     }
     &:nth-child(3) {
       .card-item {
-        background: $gold-color;
-        background-color: #d4bc62;
-        background-image: linear-gradient(to bottom,$gold-color,#c0a84e);
+        background: map-get($color, gold);
+        background-color: map-get($color, i);
+        background-image: linear-gradient(to bottom, map-get($color, gold), map-get($color, j));
         background-repeat: repeat-x;
       }
       button {
-        color: $gold-color;
+        color: map-get($color, gold);
       }
     }
     &:last-child {
       .card-item {
-        background: $pink-color;
-        background-color: #c97895;
-        background-image: linear-gradient(to bottom,$pink-color,#b56481);
+        background: map-get($color, pink);
+        background-color: map-get($color, k);
+        background-image: linear-gradient(to bottom,map-get($color, pink), map-get($color, l));
         background-repeat: repeat-x;
       }
       button {
-        color: $pink-color;
+        color: map-get($color, pink);
       }
     }
   }
 }
 .card-item {
   width: 100%;
-  color: #fff;
+  color: map-get($color, white);
   transition: all 600ms ease;
   opacity: 1;
   .card-header {
@@ -189,14 +192,14 @@
     }
   }
   button {
-    color: $grey-color;
-    background-color: #fff;
+    color: map-get($color, dark);
+    background-color: map-get($color, white);
     font-weight: bold;
     transition: all 0.3s ease 0s;
     box-shadow: none;
     &:hover {
       color: #fff !important;
-      background-color: $grey-color;
+      background-color: map-get($color, dark);
     }
   }
 }
@@ -206,22 +209,22 @@
   button {
     font-weight: 600;
     &:hover {
-      background-color: $blue-color;
+      background-color: map-get($color, blue);
     }
   }
 }
 .newest-poster {
   padding: 20px;
   padding-left: 0;
-
   .title {
     line-height: 35px;
     padding-bottom: 30px;
     h1 {
-      color: $blue-color;
+      color: map-get($color, blue);
       font-weight: 600;
+      font-size: 48px;
     }
-    h5 {
+    h3 {
       font-weight: 100;
     }
   }
@@ -231,16 +234,17 @@
       padding-left: 30px;
       h5 {
         font-weight: 100;
+        line-height: 25px;
       }
       p {
         margin-top: 10px;
-        color: $grey-text;
+        color: map-get($color, secondary);
       }
     }
     .poster-content {
       margin-top: 30px;
       font-size: 14px;
-      color: $grey-text;
+      color: map-get($color, secondary);
     }
   }
 }
@@ -252,34 +256,35 @@
   margin-bottom: 30px;
   h4 {
     font-weight: 100;
-    line-height: 30px;
+    // font-size: 26px;
   }
   .content {
     margin: 25px 0px 20px 0px;
     font-size: 14px;
-    color: $grey-text;
+    color: map-get($color, secondary);
   }
   b {
     display: block;
+    font-weight: bold;
   }
   &:first-child {
     b {
-      color: $blue-color;
+      color: map-get($color, blue);
     }
   }
   &:nth-child(2) {
     b {
-      color: $green-color;
+      color: map-get($color, green);
     }
   }
   &:nth-child(3) {
     b {
-      color: $gold-color;
+      color: map-get($color, gold);
     }
   }
   &:last-child {
     b {
-      color: $pink-color;
+      color: map-get($color, pink);
     }
   }
 }

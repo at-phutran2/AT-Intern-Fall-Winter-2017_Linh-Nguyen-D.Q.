@@ -1,11 +1,49 @@
 $font-content: 'Open Sans', sans-serif;
 
-$blue-color: #2BD4D9;
-$dark-blue-color: #00BBC1;
-$gold-color: #D2BA55;
-$pink-color: #D56F93;
-$green-color: #39D0AF;
-$grey-color: #2C3239;
-$grey-text: #777777;
+// $blue-color: #2BD4D9;
+// $dark-blue-color: #00BBC1;
+// $gold-color: #D2BA55;
+// $pink-color: #D56F93;
+// $green-color: #39D0AF;
+// $grey-color: #2C3239;
+// $grey-text: #777777;
+
+
+// Color
+$color: (
+  primary: #007bff,
+  secondary: #868e96,
+  success: #28a745,
+  danger: #dc3545,
+  warning: #ffc107,
+  info: #17a2b8,
+  light: #f2f2f2,
+  dark: #343a40,
+  disable: #d9d9d9,
+  black: #000000,
+  white: #ffffff,
+  gray: #f2f3f9,
+  green: #39D0AF,
+  pink: #D56F93,
+  red: #ff0000,
+  blue: #2BD4D9,
+  dark-blue: #00BBC1,
+  gold: #D2BA55,
+  a: #cccccc,
+  b: #a5a5a5,
+  c: #dedede,
+  d: #717171,
+  e: #4da9af,
+  f: #71cad0,
+  g: #71d0b4,
+  h: #5ebca0,
+  i: #d4bc62,
+  j: #c0a84e,
+  k: #c97895,
+  l: #b56481,
+  m: #91e5e9,
+  n: #37bdc6,
+);
+
 
 $box-shadow: 1px 2px 0 rgba(0,0,0,0.3);

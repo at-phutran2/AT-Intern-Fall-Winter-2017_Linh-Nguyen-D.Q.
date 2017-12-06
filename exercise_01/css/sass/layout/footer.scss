@@ -1,10 +1,13 @@
 footer {
-  background-color: $grey-color;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  display: block;
+  background-color: map-get($color, dark);
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 .footer-logo {
-  display: flexbox(center);
+  // display: flexbox(center);
+  @include flexbox();
+  @include flex-align(center);
   height: 50px;
   img {
     display: inline-block;
@@ -13,40 +16,41 @@ footer {
   .logo-title {
     display: inline-block;
     h4 {
-      color: #fff;
+      color: map-get($color, white);
       display: inline;
       padding-right: 5px;
     }
     span {
-      color: $gold-color;
+      color: map-get($color, gold);
     }
     p {
-      color: #fff;
+      color: map-get($color, white);
       font-size: 10px;
     }
   }
 }    
 .footer-right {
-  h5 {
+  h4 {
     font-weight: 100;
-    color: #fff;
+    color: map-get($color, white);
+    padding-bottom: 15px;
   }
   li {
-    margin-top: 10px;
+    margin-top: 18px;
   }
   a {
     font-size: 14px;
-    color: $grey-text;
+    color: map-get($color, secondary);
     &:hover {
-      color: $gold-color;
+      color: map-get($color, gold);
     }
   }
   span {
     padding-right: 10px;
   }
   i {
-    color: #fff;
+    color: map-get($color, white);
     padding: 0px 5px;
-    background-color: #717171;            
+    background-color: map-get($color, d);            
   }
 }

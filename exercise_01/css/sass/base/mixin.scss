@@ -1,16 +1,20 @@
-@mixin flexbox($align) {
+@mixin flexbox() {
   display: -webkit-box; 
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex; 
   display: flex;
+}
 
+@mixin flex-group-order() {
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
   -ms-flex-order: 1; 
   -webkit-order: 1; 
   order: 1;
+}
 
+@mixin flex-align($align) {
   -webkit-box-align: $align;
   -moz-box-align: $align;
   -ms-flex-align: $align;

@@ -7,7 +7,7 @@
 .top-navbar {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: map-get($color, white);
   .logo {
     max-height: 100px;
     img {
@@ -39,23 +39,23 @@
       box-shadow: $box-shadow;
       transition: all 0.3s ease 0s;
       &:hover {
-        background-color: $dark-blue-color;
+        background-color: map-get($color, dark-blue);
       }
     }
   }
 }
 
-nav {
+.navigation {
   display: block;
-  background-color: $blue-color;
+  background-color: map-get($color, blue);
   margin-top: 55px;
   box-shadow: $box-shadow;
-  ul {
-    display: flex;
+  .main-menu {
+    @include flexbox();
     align-items: center;
     li {
-      border-left: 1px solid #91e5e9;
-      border-right: 1px solid #37bdc6;
+      border-left: 1px solid map-get($color, m);
+      border-right: 1px solid map-get($color, n);
       &:last-child {
         float: none;
         border-right: none;
@@ -73,11 +73,36 @@ nav {
         transition: all 0.3s ease 0s;
         font-size: 15px;
         &:hover, &.active {
-          background-color: $dark-blue-color;
+          background-color: map-get($color, dark-blue);
         }
       }
     }
   }
+  .submenu-content-right {
+  display: none;
+  position: absolute;
+  left: 108%;
+  top: 0;
+  background-color: map-get($color, dark);
+  width: 100%;
+  box-shadow: $box-shadow;
+  li {
+    border: none;
+    a:hover {
+      background-color: map-get($color, dark);
+      color: map-get($color, gold);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid map-get($color, dark);
+    right: 100%;
+    top: 20px;
+  }
+}
 }
 
 .navbar-form {
@@ -93,9 +118,9 @@ nav {
     border-radius: 10px;
     border: none;
     outline: none;
-    color: #fff;
-    box-shadow: inset 1px 1px 0 #4da9af;
-    background-color: $dark-blue-color;
+    color: map-get($color, white);
+    box-shadow: inset 1px 1px 0 map-get($color, e);
+    background-color: map-get($color, dark-blue);
     width: 100%;
     font-size: 18px;
   }
@@ -124,7 +149,7 @@ nav {
 .submenu-content {
   display: none;
   position: absolute;
-  background-color: $blue-color;
+  background-color: map-get($color, blue);
   text-align: center;
   box-shadow: $box-shadow;
   a {
@@ -137,30 +162,5 @@ nav {
         display: block;
       }
     }
-  }
-}
-
-.submenu-content-right {
-  display: none;
-  position: absolute;
-  left: 108%;
-  top: 0;
-  background-color: $grey-color;
-  width: 100%;
-  li {
-    border: none;
-    a:hover {
-      background-color: $grey-color;
-      color: $gold-color;
-    }
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-right: 10px solid $grey-color;
-    right: 100%;
-    top: 20px;
   }
 }
