@@ -42,7 +42,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url("../image/background.jpg");
   background-size: 100% 52.88%;
   background-repeat: no-repeat; }
@@ -298,7 +298,8 @@ a {
 .header {
   padding-top: 80px;
   position: relative;
-  z-index: 99; }
+  z-index: 99;
+  font-family: "Open Sans", sans-serif; }
 
 .top-navbar {
   display: -webkit-box;
@@ -329,11 +330,11 @@ a {
     padding: 5px;
     display: inline-block; }
   .social-icon ul button {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     padding: 10px;
-    padding-top: 7px;
-    padding-left: 8px;
+    padding-top: 9px;
+    padding-left: 9px;
     border-radius: 50%;
     font-size: 18px;
     box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3);
@@ -474,12 +475,14 @@ footer {
     padding-right: 5px;
     font-weight: 600;
     line-height: 20px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif; }
     .footer-left h3:after {
       display: block;
       content: "TRAVEL AGENCY";
       font-weight: 100;
-      font-size: 10px !important; }
+      font-size: 10px !important;
+      font-family: Arial, Helvetica, sans-serif; }
   .footer-left span {
     color: #D2BA55;
     font-size: 15px;
@@ -488,7 +491,8 @@ footer {
 .footer-right h4 {
   font-weight: 100;
   color: #ffffff;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  font-family: "Open Sans", sans-serif; }
 .footer-right li {
   margin-top: 18px; }
 .footer-right a {
@@ -541,28 +545,32 @@ footer {
   top: 25%;
   left: 13%;
   font-weight: 100;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif; }
   .carousel-item .carousel-caption .item-title {
     color: #ffffff;
-    font-weight: 600;
-    font-size: 48px; }
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400; }
   .carousel-item .carousel-caption .item-description {
     color: #2BD4D9;
-    font-size: 45px;
-    line-height: 35px;
+    font-size: 50px;
+    line-height: 50px;
     font-weight: 100; }
 
 .feature {
   display: block;
   margin-top: 10px;
-  position: relative; }
+  position: relative;
+  font-family: "Open Sans", sans-serif; }
   .feature .feature-header {
     background-color: #f2f2f2;
     background-image: linear-gradient(to bottom, #ffffff, #dedede);
     background-repeat: repeat-x;
     padding: 20px 30px;
     box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3);
-    font-weight: 100; }
+    font-weight: 100;
+    color: #181818; }
   .feature button {
     font-size: 30px;
     background-color: #ffffff;
@@ -657,7 +665,8 @@ footer {
     padding: 15px 35px; }
     .card-item .card-header h5 {
       font-weight: 100;
-      line-height: 25px; }
+      line-height: 25px;
+      font-family: "Open Sans", sans-serif; }
   .card-item .card-content {
     padding: 15px 35px;
     font-size: 14px; }
@@ -674,7 +683,8 @@ footer {
       background-color: #343a40; }
 
 .poster {
-  margin-top: 100px; }
+  margin-top: 100px;
+  color: #181818; }
   .poster button {
     font-weight: 600; }
     .poster button:hover {
@@ -684,21 +694,26 @@ footer {
   padding: 20px;
   padding-left: 0; }
   .newest-poster .title {
-    line-height: 35px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    font-family: "Open Sans", sans-serif; }
     .newest-poster .title h2 {
       color: #2BD4D9;
       font-weight: 600;
-      font-size: 48px; }
+      font-size: 45px;
+      line-height: 42px; }
     .newest-poster .title h3 {
-      font-weight: 100; }
+      font-weight: 100;
+      font-size: 25px;
+      line-height: 28px;
+      font-weight: 300; }
   .newest-poster .content {
     margin-bottom: 30px; }
     .newest-poster .content .poster-description {
       padding-left: 30px; }
       .newest-poster .content .poster-description h5 {
         font-weight: 100;
-        line-height: 25px; }
+        line-height: 25px;
+        font-family: "Open Sans", sans-serif; }
       .newest-poster .content .poster-description p {
         margin-top: 10px;
         color: #868e96; }
@@ -714,7 +729,9 @@ footer {
   padding: 10px;
   margin-bottom: 30px; }
   .poster-card-item h4 {
-    font-weight: 100; }
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    color: #181818; }
   .poster-card-item .content {
     margin: 25px 0px 20px 0px;
     font-size: 14px;
