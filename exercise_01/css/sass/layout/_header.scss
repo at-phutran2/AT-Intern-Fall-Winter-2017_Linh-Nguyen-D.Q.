@@ -83,30 +83,30 @@
     }
   }
   .tab-content {
-  display: none;
-  position: absolute;
-  left: 108%;
-  top: 0;
-  background-color: map-get($color, dark);
-  width: 100%;
-  box-shadow: $box-shadow;
-  li {
-    border: none;
-    a:hover {
-      background-color: map-get($color, dark);
-      color: map-get($color, gold);
+    display: none;
+    position: absolute;
+    left: 108%;
+    top: 0;
+    background-color: map-get($color, dark);
+    width: 100%;
+    box-shadow: $box-shadow;
+    li {
+      border: none;
+      a:hover {
+        background-color: map-get($color, dark);
+        color: map-get($color, gold);
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid map-get($color, dark);
+      right: 100%;
+      top: 20px;
     }
   }
-  &::after {
-    position: absolute;
-    content: "";
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-right: 10px solid map-get($color, dark);
-    right: 100%;
-    top: 20px;
-  }
-}
 }
 
 .navbar-form {
