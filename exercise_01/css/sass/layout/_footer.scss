@@ -4,30 +4,32 @@ footer {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-.footer-logo {
+.footer-left {
   @include flexbox();
   @include flex-align(center);
-  height: 50px;
+  height: 45px;
   img {
-    display: inline-block;
     padding-right: 10px;
   }
-  .logo-title {
-    display: inline-block;
-    h4 {
-      color: map-get($color, white);
-      display: inline;
-      padding-right: 5px;
-    }
-    span {
-      color: map-get($color, gold);
-    }
-    p {
-      color: map-get($color, white);
-      font-size: 10px;
+  h3 {
+    color: map-get($color, white);
+    padding-right: 5px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+    &:after {
+      display: block;
+      content: "TRAVEL AGENCY";
+      font-weight: 100;
+      font-size: 10px !important;
     }
   }
-}    
+  span {
+    color: map-get($color, gold);
+    font-size: 15px;
+    font-weight: 100;
+  }
+}
 .footer-right {
   h4 {
     font-weight: 100;
