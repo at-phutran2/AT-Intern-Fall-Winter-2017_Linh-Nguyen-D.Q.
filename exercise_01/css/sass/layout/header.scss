@@ -5,8 +5,8 @@
 }
 
 .top-navbar {
-  display: flex;
-  align-items: center;
+  @include flexbox();
+  @include flex-align(center);
   color: map-get($color, white);
   .logo {
     max-height: 100px;
@@ -107,7 +107,7 @@
 
 .navbar-form {
   position: relative;
-  display: flex;
+  @include flexbox();
   width: 245px;
   right: -15%;
   padding: 16px 0px;
