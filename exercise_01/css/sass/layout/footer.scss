@@ -5,7 +5,6 @@ footer {
   padding-bottom: 50px;
 }
 .footer-logo {
-  // display: flexbox(center);
   @include flexbox();
   @include flex-align(center);
   height: 50px;

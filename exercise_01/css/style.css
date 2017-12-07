@@ -276,7 +276,15 @@ a {
   z-index: 99; }
 
 .top-navbar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   color: #ffffff; }
   .top-navbar .logo {
@@ -360,6 +368,10 @@ a {
 
 .navbar-form {
   position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 245px;
   right: -15%;
@@ -425,11 +437,11 @@ a {
   .image-gallery .carousel-right {
     left: 17%; }
 
-.item img {
+.carousel-item img {
   box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3);
   filter: grayscale(40%);
   width: 100%; }
-  .item img::after {
+  .carousel-item img::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -438,17 +450,17 @@ a {
     top: 0;
     left: 0;
     z-index: 3; }
-.item .carousel-caption {
+.carousel-item .carousel-caption {
   display: block;
   position: absolute;
   top: 25%;
   left: 13%;
   font-weight: 100;
   text-transform: uppercase; }
-  .item .carousel-caption .item-title {
+  .carousel-item .carousel-caption .item-title {
     color: #ffffff;
     font-weight: 600; }
-  .item .carousel-caption .item-description {
+  .carousel-item .carousel-caption .item-description {
     color: #2BD4D9;
     font-size: 45px;
     line-height: 35px;
