@@ -13,59 +13,56 @@
   <header class="header">
     <div class="container">
       <div class="row top-navbar">
-        <div class="col-lg-1 col-md-1 col-2 col-sm-2 logo">
-          <img src="../image/logo.png" alt="logo" title="travelino">
-        </div>
-        <div class="title col-lg-7 col-md-7 col-sm-8 col-8">
-          <h1>TRAVELINO</h1>
-          <p>TRAVEL AGENCY</p>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-8 logo">
+          <a href="#">
+            <img src="../image/logo1.png" alt="logo">
+            <p>TRAVEL AGENCY</p>
+          </a>
         </div>
         <div class="social-icon col-lg-4 col-md-4 col-sm-12 col-12">
           <ul>
             <li>
-              <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </li>
             <li>
-              <button type="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li>
             <li>
-              <button type="button"><i class="fa fa-rss" aria-hidden="true"></i></button>
+              <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
             </li>
             <li>
-              <button type="button"><i class="fa fa-google-plus" aria-hidden="true"></i></button>
+              <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
             </li>
           </ul>
         </div>
       </div>
       <nav class="navigation">
         <ul class="main-menu">
-          <li><a href="#" class="active"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown-submenu">
+          <li class="mm-item"><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li class="mm-item"><a href="#">ABOUT US</a></li>
+          <li class="mm-item mm-submenu">
             <a href="#">GALLERY</a>
             <ul class="submenu-content">
               <li><a href="#">GALLERY 2</a></li>
               <li>
                 <a href="#">GALLERY 3</a>
-                <ul class="tab-content">
-                  <li class="dropdown-item"><a href="#">CATEGORY 1</a></li>
-                  <li class="dropdown-item"><a href="#">CATEGORY 2</a></li>
-                  <li class="dropdown-item"><a href="#">CATEGORY 3</a></li>
+                <ul class="sm-tab-content">
+                  <li><a href="#">CATEGORY 1</a></li>
+                  <li><a href="#">CATEGORY 2</a></li>
+                  <li><a href="#">CATEGORY 3</a></li>
                 </ul>
               </li>
               <li><a href="#">GALLERY 4</a></li>
             </ul>
           </li>
-          <li><a href="#">EVENTS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li>
-            <form class="navbar-form">
-              <input type="text" name="search">
-              <button style="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-          </li>
+          <li class="mm-item"><a href="#">EVENTS</a></li>
+          <li class="mm-item"><a href="#">BLOG</a></li>
+          <li class="mm-item"><a href="#">CONTACT</a></li>
         </ul>
+        <form class="navbar-form">
+          <input type="text" name="search">
+          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
       </nav>
     </div>
   </header>
@@ -82,8 +79,8 @@
             </div>
           </div>
         </div>
-        <button type="button" class="carousel-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-        <button type="button" class="carousel-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>  
+        <button type="button" class="carousel-left"></button>
+        <button type="button" class="carousel-right"></button>
       </div>
     </section>
 
@@ -109,8 +106,8 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="feature-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-        <button type="button" class="feature-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>   
+        <button type="button" class="feature-left"></button>
+        <button type="button" class="feature-right"></button>   
       </div>
     </section>
 
@@ -120,7 +117,7 @@
           <div class="col-md-3">
             <div class="card-item">
               <h4 class="card-header">
-                NEWS <br>
+                NEWS
                 <b>& EVENTS</b>
               </h4>
               <div class="card-image">
@@ -136,7 +133,7 @@
           <div class="col-md-3">
             <div class="card-item">
               <h4 class="card-header">
-                NEW <br>
+                NEW
                 <b>DESTINATIONS</b>
               </h4>
               <div class="card-image">
@@ -152,7 +149,7 @@
           <div class="col-md-3">
             <div class="card-item">
               <h4 class="card-header">
-                POPULAR <br>
+                POPULAR
                 <b>TOURS</b>
               </h4>
               <div class="card-image">
@@ -168,7 +165,7 @@
           <div class="col-md-3">
             <div class="card-item">
               <h4 class="card-header">
-                BOOKING <br>
+                BOOKING
                 <b> ONLINE</b>
               </h4>
               <div class="card-image">
@@ -187,10 +184,7 @@
     <section class="poster">
       <div class="row container">
         <div class="col-md-6 newest-poster">
-          <div class="title">
-            <h2>HELLO THERE!</h2>
-            <h3>WELCOME TO OUR SITE</h3>
-          </div>
+          <h2 class="poster-title">HELLO THERE! <p>WELCOME TO OUR SITE</p></h2>
           <div class="row content">
             <div class="col-md-6 poster-img">
               <img src="../image/poster1.jpg" alt="">
@@ -213,7 +207,7 @@
         </div>
         <div class="col-md-6 row older-poster">
           <div class="col-md-6 poster-card-item">
-            <h4 class="title">
+            <h4 class="poster-title">
               24/7 CLIENT
               <b>SUPPORT</b>
             </h4>
@@ -262,10 +256,8 @@
   <footer class="footer">
     <div class="row container">
       <div class="col-md-6 col-lg-6 col-sm-12 col-12 footer-left">
-        <!-- <div class="footer-logo"> -->
-          <img src="../image/logo.png" alt="logo">
-          <h3>TRAVELINO</h3>
-          <span>© 2017 | PRIVACY POLICY</span>
+        <a href="#"><img src="../image/logo-footer.png" alt="logo"></a>
+        <span>© 2017 | <a href="#">PRIVACY POLICY</a></span>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-12 col-12 footer-right">
         <div class="row">

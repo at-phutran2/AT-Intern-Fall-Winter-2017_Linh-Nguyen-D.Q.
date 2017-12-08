@@ -2,22 +2,23 @@
   position: relative;
   z-index: 2;
   button {
-    font-size: 30px;
-    background-color: map-get($color, white);
-    color: map-get($color, dark);
-    padding: 7px 20px;
-    box-shadow:2px 2px 5px map-get($color, black);
     position: absolute;
     top: 50%;
     left: 13%;
-    transition: all 0.3s ease 0s;
+    background: url("../image/nav-slider.png") no-repeat;
+    width: 53px;
+    height: 54px;
+    transition: none;
     &:hover {
-      background-color: map-get($color, gold);
-      color: map-get($color, white);
+      background-position: 0 -54px;
     }
   }
   .carousel-right {
-    left: 17%;
+    left: 17.2%;
+    background: url("../image/nav-slider.png") no-repeat -53px 0;
+    &:hover {
+      background-position: -53px -54px;
+    }
   }
 }
 
@@ -49,7 +50,7 @@
       color: map-get($color, white);
       font-size: 50px;
       line-height: 50px;
-      font-weight:400;
+      font-weight:600;
     }
     .item-description {
       color: map-get($color, blue);
@@ -73,30 +74,32 @@
     box-shadow: $box-shadow;
     font-weight: 100;
     color: map-get($color, o);
+    position: relative;
   }
   button {
-    font-size: 30px;
-    background-color: map-get($color, white);
-    color: map-get($color, dark);
-    padding: 7px 20px;
-    box-shadow:2px 2px 5px map-get($color, black);
+    background: url("../image/nav.png") no-repeat;
+    width: 53px;
+    height: 73px;
+    transition: none;
     position: absolute;
     top: 50%;
+    left: 5.4%;
+    box-shadow: none;
     &:hover {
-      background-color: map-get($color, gold);
-      color: map-get($color, white);
+      background-position: 0 -73px;
     }
   }
   .feature-right {
-    left: 91.5%;
-  }
-  .feature-left {
-    left: 4.8%;
+    left: 90.9%;
+    background: url("../image/nav.png") no-repeat -53px 0;
+    &:hover {
+      background-position: -53px -73px;
+    }
   }
 }
 .feature-body {
   background-color: map-get($color, dark);
-  padding: 15px 20px 25px 20px;
+  padding: 15px 40px 25px 40px;
   box-shadow: $box-shadow;
   ul {
     margin: 0 auto;
@@ -220,20 +223,17 @@
 .newest-poster {
   padding: 20px;
   padding-left: 0;
-  .title {
+  .poster-title {
     padding-bottom: 30px;
     font-family: $font-title;
-    h2 {
-      color: map-get($color, blue);
-      font-weight: 600;
-      font-size: 45px;
-      line-height: 42px;
-    }
-    h3 {
-      font-weight: 100;
+    color: map-get($color, blue);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 42px;
+    p {
       font-size: 25px;
-      line-height: 28px;
-      font-weight: 300;
+      color: map-get($color, o);
+      font-weight: 100;
     }
   }
   .content {

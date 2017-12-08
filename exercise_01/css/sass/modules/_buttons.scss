@@ -2,7 +2,7 @@ button {
   cursor: pointer;
   background-color: map-get($color, dark);
   color: map-get($color, white);
-  font-weight: 600;
+  font-family: $font-title;
   border: none;
   text-align: center;
   padding: 10px 20px;
@@ -17,9 +17,9 @@ button {
   left: 95%;
   top: 88%;
   z-index: 999;
-  padding: 15px;
+  padding: 5px 12px 10px 12px;
   background-color: map-get($color, blue);
-  font-size: 20px;
+  font-size: 25px;
   transition: all 0.8s ease 0s;
   &:hover {
     background-color: map-get($color, dark);

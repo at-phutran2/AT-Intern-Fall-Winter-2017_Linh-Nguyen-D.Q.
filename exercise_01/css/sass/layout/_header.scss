@@ -10,16 +10,12 @@
   @include flex-align(center);
   color: map-get($color, white);
   .logo {
-    max-height: 100px;
-    img {
-      width: 60px;
-    }
-  }
-  .title {
-    transform: translate(-4%, 0);
-    line-height: 32px;
-    h1 {
-      font-weight: 600;
+    position: relative;
+    p {
+      position: absolute;
+      bottom: 3px;
+      left: 72px;
+      font: 300 15px/1em $font-title;
     }
   }
 }
@@ -27,95 +23,101 @@
 .social-icon {
   text-align: right;
   padding-right: 0;
-  ul {
-    li {
-      padding: 5px;
-      display: inline-block;
-    }
-    button {
-      width: 35px;
-      height: 35px;
-      padding: 10px;
-      padding-top: 9px;
-      padding-left: 9px;
-      border-radius: 50%;
-      font-size: 18px;
-      box-shadow: $box-shadow;
-      transition: all 0.3s ease 0s;
-      &:hover {
-        background-color: map-get($color, dark-blue);
-      }
+  li {
+    padding: 5px;
+    display: inline-block;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 0px;
+    background-color: rgb(52, 58, 64);
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background-color: map-get($color, dark-blue);
     }
   }
 }
 
 .navigation {
-  display: block;
+  @include flexbox();
+  align-self: center;
   background-color: map-get($color, blue);
   margin-top: 55px;
   box-shadow: $box-shadow;
-  .main-menu {
-    @include flexbox();
-    align-items: center;
-    li {
-      border-left: 1px solid map-get($color, m);
-      border-right: 1px solid map-get($color, n);
-      &:last-child {
-        float: none;
-        border-right: none;
-      }
-      &:first-child {
-        border-left: none;
-        a {
-          padding: 20px 16px;
-          font-size: 14px;
-        }
-      }
-      a {
-        display: block;
-        padding: 26px 50px;
-        transition: all 0.3s ease 0s;
-        font-size: 15px;
-        &:hover, &.active {
-          background-color: map-get($color, dark-blue);
-        }
-      }
+  position: relative;
+}
+.main-menu {
+  display: inline-block;
+  align-items: center;
+  width: 80%;
+}
+.mm-item {
+  display: list-item;
+  float: left;
+  line-height: 23px;
+  max-width: 160px;
+  width: 100%;
+  text-align: center;
+  border-left: 1px solid rgb(145, 229, 233);
+  border-right: 1px solid rgb(55, 189, 198);
+  &:first-child {
+    width: 7%;
+    a {
+      padding: 19px 0px;
+    }
+    i {
+      font-size: 30px;
     }
   }
-  .tab-content {
-    display: none;
-    position: absolute;
-    left: 108%;
-    top: 0;
-    background-color: map-get($color, dark);
-    width: 100%;
-    box-shadow: $box-shadow;
-    li {
-      border: none;
-      a:hover {
-        background-color: map-get($color, dark);
-        color: map-get($color, gold);
-      }
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      border-bottom: 10px solid transparent;
-      border-top: 10px solid transparent;
-      border-right: 10px solid map-get($color, dark);
-      right: 100%;
-      top: 20px;
+  a {
+    display: block;
+    padding: 23px 0px 24px;
+    transition: all 0.3s ease 0s;
+    font-size: 15px;
+    &:hover, &.active {
+      background-color: map-get($color, dark-blue);
     }
   }
 }
-
+.sm-tab-content {
+  display: none;
+  position: absolute;
+  left: 108%;
+  top: 0;
+  background-color: map-get($color, dark);
+  width: 100%;
+  box-shadow: $box-shadow;
+  li {
+    border: none;
+    a:hover {
+      background-color: map-get($color, dark);
+      color: map-get($color, gold);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid map-get($color, dark);
+    right: 100%;
+    top: 20px;
+  }
+}
 .navbar-form {
-  position: relative;
-  @include flexbox();
-  width: 245px;
-  right: -15%;
-  padding: 14px 0px;
+  position: absolute;
+  display: inline-block;
+  width: 26%;
+  right: 0px;
   height: 100%;
+  padding: 15px 25px 15px 40px;
+  border-left: 1px solid rgb(145, 229, 233);
   input {
     height: 40px;
     padding-right: 40px;
@@ -123,6 +125,7 @@
     border-radius: 10px;
     border: none;
     outline: none;
+    width: 100%;
     color: map-get($color, white);
     box-shadow: inset 1px 1px 0 map-get($color, e);
     background-color: map-get($color, dark-blue);
@@ -133,15 +136,15 @@
     position: absolute;
     background-color: transparent;
     font-size: 20px;
-    padding: 0;
     box-shadow: none;
-    left: 88%;
-    top: 32%;
+    left: 82%;
+    top: 30%;
     cursor: pointer;
+    padding: 0px;
   }
 }
 
-.dropdown-submenu {
+.mm-submenu {
   position: relative;
   display: inline-block;
   &:hover {
@@ -154,20 +157,20 @@
 .submenu-content {
   display: none;
   position: absolute;
-  background-color: map-get($color, blue);
+  background-color: rgb(43, 212, 217);
   text-align: center;
-  box-shadow: $box-shadow;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 0px;
   a {
-    padding: 15px 16px !important;
+    padding: 10px 0px;
     &:hover {
       color: map-get($color, black);
-      background-color: transparent !important;
+      background-color: transparent;
     }
   }
   li:nth-child(2) {
     position: relative;
     &:hover {
-      .tab-content {
+      .sm-tab-content {
         display: block;
       }
     }
