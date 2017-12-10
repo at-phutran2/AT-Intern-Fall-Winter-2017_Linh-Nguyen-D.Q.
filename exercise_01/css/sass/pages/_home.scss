@@ -1,3 +1,7 @@
+.main-content {
+  padding-bottom: 20px;
+}
+
 .image-gallery {
   position: relative;
   z-index: 2;
@@ -138,7 +142,7 @@
         background-image: linear-gradient(to bottom, map-get($color, blue), map-get($color, e));
         background-repeat: repeat-x;
       }
-      button {
+      .btn {
         color: map-get($color, blue);
       }
     }
@@ -149,7 +153,7 @@
         background-image: linear-gradient(to bottom, map-get($color, green),map-get($color, h));
         background-repeat: repeat-x;
       }
-      button {
+      .btn {
         color: map-get($color, green);
       }
     }
@@ -160,7 +164,7 @@
         background-image: linear-gradient(to bottom, map-get($color, gold), map-get($color, j));
         background-repeat: repeat-x;
       }
-      button {
+      .btn {
         color: map-get($color, gold);
       }
     }
@@ -171,53 +175,46 @@
         background-image: linear-gradient(to bottom,map-get($color, pink), map-get($color, l));
         background-repeat: repeat-x;
       }
-      button {
+      .btn {
         color: map-get($color, pink);
       }
     }
   }
 }
 .card-item {
+  display: block;
   width: 100%;
   color: map-get($color, white);
   transition: all 600ms ease;
   opacity: 1;
   .card-header {
-    padding: 15px 35px;
-    h5 {
-      font-weight: 100;
-      line-height: 25px;
-      font-family: $font-title;
+    padding: 18px 32px;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: $font-title;
+    b {
+      display: block;
     }
+  }
+  .card-image {
+    margin-bottom: 24px;
   }
   .card-content {
-    padding: 15px 35px;
+    padding: 0 31px;
     font-size: 14px;
-    p {
-      margin-bottom: 24px !important;
-    }
+    margin-bottom: 24px !important;
   }
-  button {
-    color: map-get($color, dark);
-    background-color: map-get($color, white);
-    font-weight: bold;
-    transition: all 0.3s ease 0s;
-    box-shadow: none;
-    &:hover {
-      color: #fff !important;
-      background-color: map-get($color, dark);
-    }
+  .link-btn {
+    display: block;
+    margin: 0 32px 30px 32px;
   }
 }
 
 .poster {
   margin-top: 100px;
   color: map-get($color, o);
-  button {
-    font-weight: 600;
-    &:hover {
-      background-color: map-get($color, blue);
-    }
+  .btn {
+    box-shadow: $box-shadow;
   }
 }
 .newest-poster {
@@ -268,7 +265,7 @@
     font-family: $font-title;
     color: map-get($color, o);
   }
-  .content {
+  .poster-content {
     margin: 25px 0px 20px 0px;
     font-size: 14px;
     color: map-get($color, secondary);

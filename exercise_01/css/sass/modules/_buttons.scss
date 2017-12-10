@@ -25,3 +25,27 @@ button {
     background-color: map-get($color, dark);
   } 
 }
+
+.btn {
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-family: $font-title;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-white {
+  background-color: map-get($color, white);
+  &:hover {
+    color: #fff !important;
+    background-color: map-get($color, dark);
+  }
+}
+
+.btn-dark {
+  background-color: map-get($color, dark);
+  &:hover {
+    background-color: map-get($color, blue);
+  }
+}

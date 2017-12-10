@@ -125,6 +125,25 @@ button {
   .back-to-top:hover {
     background-color: #343a40; }
 
+.btn {
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600; }
+
+.btn-white {
+  background-color: #ffffff; }
+  .btn-white:hover {
+    color: #fff !important;
+    background-color: #343a40; }
+
+.btn-dark {
+  background-color: #343a40; }
+  .btn-dark:hover {
+    background-color: #2BD4D9; }
+
 img {
   max-width: 100%;
   max-height: 100%; }
@@ -505,6 +524,9 @@ a {
   padding: 0px 5px;
   background-color: #717171; }
 
+.main-content {
+  padding-bottom: 20px; }
+
 .image-gallery {
   position: relative;
   z-index: 2; }
@@ -632,63 +654,58 @@ a {
     background-color: #71cad0;
     background-image: linear-gradient(to bottom, #2BD4D9, #4da9af);
     background-repeat: repeat-x; }
-  .status-publish-content .col-md-3:first-child button {
+  .status-publish-content .col-md-3:first-child .btn {
     color: #2BD4D9; }
   .status-publish-content .col-md-3:nth-child(2) .card-item {
     background: #39D0AF;
     background-color: #71d0b4;
     background-image: linear-gradient(to bottom, #39D0AF, #5ebca0);
     background-repeat: repeat-x; }
-  .status-publish-content .col-md-3:nth-child(2) button {
+  .status-publish-content .col-md-3:nth-child(2) .btn {
     color: #39D0AF; }
   .status-publish-content .col-md-3:nth-child(3) .card-item {
     background: #D2BA55;
     background-color: #d4bc62;
     background-image: linear-gradient(to bottom, #D2BA55, #c0a84e);
     background-repeat: repeat-x; }
-  .status-publish-content .col-md-3:nth-child(3) button {
+  .status-publish-content .col-md-3:nth-child(3) .btn {
     color: #D2BA55; }
   .status-publish-content .col-md-3:last-child .card-item {
     background: #D56F93;
     background-color: #c97895;
     background-image: linear-gradient(to bottom, #D56F93, #b56481);
     background-repeat: repeat-x; }
-  .status-publish-content .col-md-3:last-child button {
+  .status-publish-content .col-md-3:last-child .btn {
     color: #D56F93; }
 
 .card-item {
+  display: block;
   width: 100%;
   color: #ffffff;
   transition: all 600ms ease;
   opacity: 1; }
   .card-item .card-header {
-    padding: 15px 35px; }
-    .card-item .card-header h5 {
-      font-weight: 100;
-      line-height: 25px;
-      font-family: "Open Sans", sans-serif; }
+    padding: 18px 32px;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif; }
+    .card-item .card-header b {
+      display: block; }
+  .card-item .card-image {
+    margin-bottom: 24px; }
   .card-item .card-content {
-    padding: 15px 35px;
-    font-size: 14px; }
-    .card-item .card-content p {
-      margin-bottom: 24px !important; }
-  .card-item button {
-    color: #343a40;
-    background-color: #ffffff;
-    font-weight: bold;
-    transition: all 0.3s ease 0s;
-    box-shadow: none; }
-    .card-item button:hover {
-      color: #fff !important;
-      background-color: #343a40; }
+    padding: 0 31px;
+    font-size: 14px;
+    margin-bottom: 24px !important; }
+  .card-item .link-btn {
+    display: block;
+    margin: 0 32px 30px 32px; }
 
 .poster {
   margin-top: 100px;
   color: #181818; }
-  .poster button {
-    font-weight: 600; }
-    .poster button:hover {
-      background-color: #2BD4D9; }
+  .poster .btn {
+    box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.3); }
 
 .newest-poster {
   padding: 20px;
@@ -730,7 +747,7 @@ a {
     font-weight: 100;
     font-family: "Open Sans", sans-serif;
     color: #181818; }
-  .poster-card-item .content {
+  .poster-card-item .poster-content {
     margin: 25px 0px 20px 0px;
     font-size: 14px;
     color: #868e96; }
