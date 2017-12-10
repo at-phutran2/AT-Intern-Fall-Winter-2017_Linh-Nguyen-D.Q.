@@ -1,0 +1,21 @@
+1> What are the differences between a variable that is: `null`, `undefined`?
+  -> undefined is unknown value. When you declare a variable but it isn't assigned value => the value of the variable is undefined
+  -> null means that the value is null or does not exist, it can be used to assign a variable as non-valued value.
+
+2> What is `use strict`? what are the advantages and disadvantages to using it?
+  -> Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions.
+  -> Strict mode helps out in a couple ways:
+  It catches some common coding bloopers, throwing exceptions.
+  It prevents, or throws errors, when relatively "unsafe" actions are taken (such as gaining access to the global object).
+  It disables features that are confusing or poorly thought out.
+
+3> What are the differences between `==` and `===`? Write an example for each case (if any)?
+  -> == only compare value, === compare value and value type.
+  -> Example:
+    1 == "1" => return true;
+    1 === "1" => return false;
+
+4> What is different between declaration: `var`, `const` and `let`?
+  -> var creates a variable whose scope is accessed throughout the function that contains it.
+  -> let creates a variable that is only accessible in the block that surrounds it.
+  -> const is similar to let, but it is used to declare a constant - is a value that can not be changed during the run.
