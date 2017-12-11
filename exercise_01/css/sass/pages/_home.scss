@@ -131,11 +131,15 @@
   margin-top: 30px;
 }
 .status-publish-content {
+  .card-list {
+    display: flex;
+  }
   .col-md-3 {
     @include flexbox();
     justify-content: center;
-    padding: 10px;
+    margin: 15px;
     &:first-child {
+      margin-left: 0;
       .card-item {
         background: map-get($color, blue);
         background-color: map-get($color, f);
@@ -169,6 +173,7 @@
       }
     }
     &:last-child {
+      margin-right: 0;
       .card-item {
         background: map-get($color, pink);
         background-color: map-get($color, k);
@@ -211,7 +216,7 @@
 }
 
 .poster {
-  margin-top: 100px;
+  margin-top: 50px;
   color: map-get($color, o);
   .btn {
     box-shadow: $box-shadow;
