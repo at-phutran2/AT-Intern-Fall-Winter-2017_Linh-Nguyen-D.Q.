@@ -19,3 +19,4 @@
   -> var creates a variable whose scope is accessed throughout the function that contains it.
   -> let creates a variable that is only accessible in the block that surrounds it.
   -> const is similar to let, but it is used to declare a constant - is a value that can not be changed during the run.
+  
