@@ -3,3 +3,6 @@
 
 2> What is `parameters` in function using for?
   -> Parameters in function is used for resolve argument which is transmitted in function.
+
+3> Is there a max number of arguments javascript functions can accept?
+  -> A function can have up to 255 arguments, but it's not max number. Depending on the browser, there will be max number of arguments and it is not fixed. Example: Chrome 33.0.1750.154 m: The last successful test was 32766 arguments.
