@@ -1,0 +1,5 @@
+1> What are the differences between `function declaration` and `function expressions`?
+  -> Function declaration can be called either before declare or after declare. The expression function must have a sequence.
+
+2> What is `parameters` in function using for?
+  -> Parameters in function is used for resolve argument which is transmitted in function.
