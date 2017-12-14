@@ -23,7 +23,10 @@ button {
   transition: all 0.8s ease 0s;
   &:hover {
     background-color: map-get($color, dark);
-  } 
+  }
+  @media (max-width: 1023px) {
+    display: none !important;
+  }
 }
 
 .btn {

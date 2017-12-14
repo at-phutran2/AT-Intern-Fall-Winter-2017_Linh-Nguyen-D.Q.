@@ -5,20 +5,24 @@
 .image-gallery {
   position: relative;
   z-index: 2;
-  button {
+  .carousel-button {
+    display: block;
     position: absolute;
     top: 50%;
-    left: 13%;
+    left: 13%;   
+  }
+  button {
+    display: inline-block;
     background: url("../image/nav-slider.png") no-repeat;
     width: 53px;
     height: 54px;
     transition: none;
+    box-shadow: none;
     &:hover {
       background-position: 0 -54px;
     }
   }
   .carousel-right {
-    left: 17.2%;
     background: url("../image/nav-slider.png") no-repeat -53px 0;
     &:hover {
       background-position: -53px -54px;
@@ -68,7 +72,6 @@
 .feature {
   display: block;
   margin-top: 10px;
-  position: relative;
   font-family: $font-title;
   .feature-header {
     background-color: map-get($color, light);
@@ -85,16 +88,20 @@
     width: 53px;
     height: 73px;
     transition: none;
-    position: absolute;
-    top: 50%;
-    left: 5.4%;
     box-shadow: none;
+    display: inline-block;
+    position: absolute;
+    top: 30%;    
     &:hover {
       background-position: 0 -73px;
     }
   }
+  .feature-left {
+    left: -18px !important;
+  }
   .feature-right {
-    left: 90.9%;
+    left: auto !important;
+    right: -20px;
     background: url("../image/nav.png") no-repeat -53px 0;
     &:hover {
       background-position: -53px -73px;
@@ -105,6 +112,7 @@
   background-color: map-get($color, dark);
   padding: 15px 40px 25px 40px;
   box-shadow: $box-shadow;
+  position: relative;
   ul {
     margin: 0 auto;
     @include flexbox();
@@ -130,59 +138,57 @@
 .status-publish {
   margin-top: 30px;
 }
-.status-publish-content {
-  .card-list {
-    display: flex;
+.card-list {
+  display: flex;
+}
+.status-item {
+  @include flexbox();
+  justify-content: center;
+  margin-top: 15px;
+  &:first-child {
+    margin-left: 0;
+    .card-item {
+      background: map-get($color, blue);
+      background-color: map-get($color, f);
+      background-image: linear-gradient(to bottom, map-get($color, blue), map-get($color, e));
+      background-repeat: repeat-x;
+    }
+    .btn {
+      color: map-get($color, blue);
+    }
   }
-  .col-md-3 {
-    @include flexbox();
-    justify-content: center;
-    margin: 15px;
-    &:first-child {
-      margin-left: 0;
-      .card-item {
-        background: map-get($color, blue);
-        background-color: map-get($color, f);
-        background-image: linear-gradient(to bottom, map-get($color, blue), map-get($color, e));
-        background-repeat: repeat-x;
-      }
-      .btn {
-        color: map-get($color, blue);
-      }
+  &:nth-child(2) {
+    .card-item {
+      background: map-get($color, green);
+      background-color: map-get($color, g);
+      background-image: linear-gradient(to bottom, map-get($color, green),map-get($color, h));
+      background-repeat: repeat-x;
     }
-    &:nth-child(2) {
-      .card-item {
-        background: map-get($color, green);
-        background-color: map-get($color, g);
-        background-image: linear-gradient(to bottom, map-get($color, green),map-get($color, h));
-        background-repeat: repeat-x;
-      }
-      .btn {
-        color: map-get($color, green);
-      }
+    .btn {
+      color: map-get($color, green);
     }
-    &:nth-child(3) {
-      .card-item {
-        background: map-get($color, gold);
-        background-color: map-get($color, i);
-        background-image: linear-gradient(to bottom, map-get($color, gold), map-get($color, j));
-        background-repeat: repeat-x;
-      }
-      .btn {
-        color: map-get($color, gold);
-      }
+  }
+  &:nth-child(3) {
+    .card-item {
+      background: map-get($color, gold);
+      background-color: map-get($color, i);
+      background-image: linear-gradient(to bottom, map-get($color, gold), map-get($color, j));
+      background-repeat: repeat-x;
     }
-    &:last-child {
-      margin-right: 0;
-      .card-item {
-        background: map-get($color, pink);
-        background-color: map-get($color, k);
-        background-image: linear-gradient(to bottom,map-get($color, pink), map-get($color, l));
-        background-repeat: repeat-x;
-      }
-      .btn {
-        color: map-get($color, pink);
-      }
+    .btn {
+      color: map-get($color, gold);
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+    .card-item {
+      background: map-get($color, pink);
+      background-color: map-get($color, k);
+      background-image: linear-gradient(to bottom,map-get($color, pink), map-get($color, l));
+      background-repeat: repeat-x;
+    }
+    .btn {
+      color: map-get($color, pink);
     }
   }
 }
@@ -223,8 +229,7 @@
   }
 }
 .newest-poster {
-  padding: 20px;
-  padding-left: 0;
+  padding-left: 15px;
   .poster-title {
     padding-bottom: 30px;
     font-family: $font-title;
@@ -241,7 +246,6 @@
   .content {
     margin-bottom: 30px;
     .poster-description {
-      padding-left: 30px;
       h5 {
         font-weight: 100;
         line-height: 25px;
@@ -259,11 +263,10 @@
     }
   }
 }
-.older-poster {
-  padding: 10px;
-}
+// .older-poster {
+//   margin-top: 15px;
+// }
 .poster-card-item {
-  padding: 10px;
   margin-bottom: 30px;
   h4 {
     font-weight: 100;
@@ -298,5 +301,58 @@
     b {
       color: map-get($color, pink);
     }
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-content {
+    padding-top: 20px;
+  }
+  .image-gallery {
+    .carousel-button {
+      left: auto;
+      top: auto;
+      right: 5%;
+      bottom: 8%;
+    }
+  }
+  .carousel-caption {
+    top: 6% !important;
+    left: 6% !important;
+    .item-title {
+      font-size: 30px !important;
+      color: map-get($color, white);
+      line-height: 1em !important;
+      font-weight:600;
+    }
+    .item-description {
+      color: map-get($color, blue);
+      font-size: 30px !important;
+      line-height: 1em !important;
+      font-weight: 100;
+    }
+  }
+  .feature {
+    button {
+      left: -1.9%;
+    }
+    .feature-right {
+      left: 96.7%;
+    }
+  }
+  .older-poster {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .status-item:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
+@media (max-width: 599px) {
+  .carousel-caption {
+    display: none !important;
   }
 }

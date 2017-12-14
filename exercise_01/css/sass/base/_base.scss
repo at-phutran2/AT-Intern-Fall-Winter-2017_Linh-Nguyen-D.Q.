@@ -7,7 +7,7 @@ body {
   background-image: url("../image/bg-top.jpg");
   background-size: 100% 51.24%;
   background-repeat: no-repeat;
-
+  overflow-x: hidden;
   &::after {
     content: "";
     position: absolute;

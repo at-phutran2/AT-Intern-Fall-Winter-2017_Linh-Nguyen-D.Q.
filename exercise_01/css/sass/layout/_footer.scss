@@ -47,3 +47,13 @@
     background-color: map-get($color, d);            
   }
 }
+
+@media (max-width: 1023px) {
+  .footer-right {
+    margin-top: 15px;
+  }
+  .footer-right-item {
+    margin-top: 15px;
+    margin-bottom: 15px
+  }
+}
