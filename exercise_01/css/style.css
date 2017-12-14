@@ -333,7 +333,7 @@ a {
 .header {
   padding-top: 80px;
   position: relative;
-  z-index: 99;
+  z-index: 1000;
   font-family: "Open Sans", sans-serif; }
 
 .top-navbar {
@@ -581,7 +581,7 @@ a {
   .image-gallery .carousel-button {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 13%; }
   .image-gallery button {
     display: inline-block;
