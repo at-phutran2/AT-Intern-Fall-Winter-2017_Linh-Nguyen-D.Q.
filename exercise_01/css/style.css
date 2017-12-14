@@ -504,6 +504,10 @@ a {
       display: block; }
 
 @media (max-width: 767px) {
+  .social-icon {
+    margin-top: 15px;
+    text-align: left; }
+
   .main-menu {
     display: none; }
 
@@ -567,7 +571,9 @@ a {
     margin-top: 15px;
     margin-bottom: 15px; } }
 .main-content {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 999; }
 
 .image-gallery {
   position: relative;
@@ -644,7 +650,8 @@ a {
     box-shadow: none;
     display: inline-block;
     position: absolute;
-    top: 30%; }
+    top: 50%;
+    margin-top: -36.5px; }
     .feature button:hover {
       background-position: 0 -73px; }
   .feature .feature-left {

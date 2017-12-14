@@ -1,5 +1,7 @@
 .main-content {
   padding-bottom: 20px;
+  position: relative;
+  z-index: 999;
 }
 
 .image-gallery {
@@ -91,7 +93,8 @@
     box-shadow: none;
     display: inline-block;
     position: absolute;
-    top: 30%;    
+    top: 50%;
+    margin-top: -36.5px;
     &:hover {
       background-position: 0 -73px;
     }
