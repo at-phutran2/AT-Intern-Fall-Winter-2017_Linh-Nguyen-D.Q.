@@ -10,16 +10,22 @@ $color: (
   warning: #ffc107,
   info: #17a2b8,
   light: #f2f2f2,
+  light-a: #e4e4e4,
   dark: #343a40,
   disable: #d9d9d9,
   black: #000000,
   white: #ffffff,
   gray: #f2f3f9,
+  gray-a: #ddd,
+  gray-b: #555;
   green: #39D0AF,
   pink: #D56F93,
   red: #ff0000,
   blue: #2BD4D9,
   dark-blue: #00BBC1,
+  blue-bl: rgb(145, 229, 233),
+  blue-br: rgb(55, 189, 198),
+  blue-sm: rgb(43, 212, 217),
   gold: #D2BA55,
   a: #cccccc,
   b: #a5a5a5,
@@ -38,6 +44,5 @@ $color: (
   o: #181818,
   p: #5ecdd4,
 );
-
 
 $box-shadow: 1px 2px 0 rgba(0,0,0,0.3);
