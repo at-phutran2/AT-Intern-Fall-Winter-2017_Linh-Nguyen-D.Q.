@@ -95,7 +95,7 @@
     }
   }
 }
-.sm-tab-content {
+.mm-submenu-content {
   display: none;
   position: absolute;
   left: 108%;
@@ -151,17 +151,17 @@
   }
 }
 
-.mm-submenu {
+.mm-has-submenu {
   position: relative;
   display: inline-block;
   &:hover {
-    >.submenu-content {
+    >.mm-submenu {
       display: block;
       min-width: 100%;
     }
   }
 }
-.submenu-content {
+.mm-submenu {
   display: none;
   position: absolute;
   background-color: map-get($color, blue-sm);
@@ -177,7 +177,7 @@
   li:nth-child(2) {
     position: relative;
     &:hover {
-      .sm-tab-content {
+      .mm-submenu-content {
         display: block;
       }
     }
