@@ -37,43 +37,39 @@
         </div>
       </div>
       <nav class="navigation">
-        <ul class="main-menu">
-          <li class="mm-item"><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-          <li class="mm-item"><a href="#">ABOUT US</a></li>
-          <li class="mm-item mm-has-submenu">
-            <a href="#">GALLERY</a>
-            <ul class="mm-submenu">
-              <li><a href="#">GALLERY 2</a></li>
-              <li>
-                <a href="#">GALLERY 3</a>
-                <ul class="mm-submenu-content">
-                  <li><a href="#">CATEGORY 1</a></li>
-                  <li><a href="#">CATEGORY 2</a></li>
-                  <li><a href="#">CATEGORY 3</a></li>
+        <div class="row">
+          <div class="col-lg-9 col-md-9 left-nav">
+            <a href="javascript:void(0);" class="align-icon" onclick="myFunction()">&#9776;</a>
+            <ul id="my-mm" class="main-menu">
+              <li class="mm-item"><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+              <li class="mm-item"><a href="#">ABOUT US</a></li>
+              <li class="mm-item mm-has-submenu">
+                <a href="#">GALLERY</a>
+                <ul class="mm-submenu">
+                  <li><a href="#">GALLERY 2</a></li>
+                  <li>
+                    <a href="#">GALLERY 3</a>
+                    <ul class="mm-submenu-content">
+                      <li><a href="#">CATEGORY 1</a></li>
+                      <li><a href="#">CATEGORY 2</a></li>
+                      <li><a href="#">CATEGORY 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">GALLERY 4</a></li>
                 </ul>
               </li>
-              <li><a href="#">GALLERY 4</a></li>
-            </ul>
-          </li>
-          <li class="mm-item"><a href="#">EVENTS</a></li>
-          <li class="mm-item"><a href="#">BLOG</a></li>
-          <li class="mm-item"><a href="#">CONTACT</a></li>
-          <li class="mn-item">
+              <li class="mm-item"><a href="#">EVENTS</a></li>
+              <li class="mm-item"><a href="#">BLOG</a></li>
+              <li class="mm-item"><a href="#">CONTACT</a></li>
+            </ul>            
+          </div>
+          <div class="col-lg-3 col-md-3 right-nav">
             <form class="navbar-form">
               <input type="text" name="search">
               <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-          </li>
-        </ul>
-
-        <select class="mm-select">
-          <option class="mm-select-item">Home</option>
-          <option class="mm-select-item">About us</option>
-          <option class="mm-select-item">Gallery</option>
-          <option class="mm-select-item">Events</option>
-          <option class="mm-select-item">Blog</option>
-          <option class="mm-select-item">Contact</option>
-        </select>
+            </form>            
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -377,5 +373,7 @@
   <button type="button" class="back-to-top">
     <i class="fa fa-chevron-up" aria-hidden="true"></i>
   </button>
+
+  <script type="text/javascript" src="../js/navbar-responsive.js"></script>
 </body>
 </html>

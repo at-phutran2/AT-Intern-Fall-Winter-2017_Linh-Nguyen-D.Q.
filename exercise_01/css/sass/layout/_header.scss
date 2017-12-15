@@ -44,26 +44,25 @@
 .navigation {
   margin-top: 55px;
   position: relative;
+  background-color: map-get($color, blue);
 }
+
+.align-icon {
+  font-size: 30px !important;
+  display: none;
+  width: 70px;
+  min-width: 70px;
+  padding: 20px 0px;
+  text-align: center;
+  &:hover {
+    background-color: map-get($color, dark-blue);
+  }
+}
+
 .main-menu {
   align-items: center;
   @include flexbox();
-  background-color: map-get($color, blue);
-}
-.mm-select {
-  display: none;
-  width: 100%;
-  outline: none;
-  border-radius: 4px;
-  border: 1px solid map-get($color, gray-a);
-  background-color: map-get($color, light-a);
-  line-height: 33px;
-  font-size: 14px;
-  color: map-get($color, gray-b);
-  padding: 5px;
-}
-.mm-select-item {
-  padding: 10px 5px;
+  border-right: 1px solid map-get($color, blue-bl);
 }
 .mm-item {
   display: list-item;
@@ -75,8 +74,8 @@
   border-left: 1px solid map-get($color, blue-bl);
   border-right: 1px solid map-get($color, blue-br);
   &:first-child {
-    min-width: 60px;
-    width: 7%;
+    width: 70px;
+    min-width: 70px;
     border-left: none;
     a {
       padding: 19px 0px;
@@ -120,11 +119,15 @@
     top: 20px;
   }
 }
+.right-nav {
+  @include flexbox();
+  @include flex-align(center);
+  padding: 15px;
+}
 .navbar-form {
   @include flexbox();
   height: 100%;
-  padding: 15px 20px 15px 20px;
-  border-left: 1px solid map-get($color, blue-bl);
+  position: relative;
   input {
     height: 40px;
     padding-right: 40px;
@@ -144,10 +147,11 @@
     background-color: transparent;
     font-size: 20px;
     box-shadow: none;
-    right: 3%;
-    top: 30%;
+    right: 25px;
+    top: 50%;
     cursor: pointer;
     padding: 0px;
+    margin-top: -15px;
   }
 }
 
@@ -184,21 +188,62 @@
   }
 }
 
+.responsive {
+  display: block !important;
+  .mm-item {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
+  .header {
+    padding-top: 25px;
+  }
   .social-icon {
-    margin-top: 15px;
-    text-align: left;
+    display: none;
+    // margin-top: 15px;
+    // text-align: right;
+  }
+  .navigation {
+    margin-top: 30px;
   }
   .main-menu {
     display: none;
   }
-  .mm-select {
-    display: block;
+  .left-nav {
+    width: 100%;
   }
-}
-
-@media (max-width: 900px) {
-  .navbar-form {
-    display: none;
+  .mm-item {
+    width: 100%;
+    display: block;
+    border: none;
+    max-width: 100%;
+    border-bottom: 1px solid map-get($color, dark-blue);
+    a {
+      padding: 15px 0px;
+    }
+    &:first-child {
+      a {
+        padding: 15px 0px;
+      }
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+  .mm-submenu {
+    box-shadow: none;
+    a {
+      padding: 15px 0px;
+      border-top: 1px solid map-get($color, dark-blue);
+    }
+  }
+  .align-icon {
+    display: inline-block;
+  }
+  .right-nav {
+    position: absolute;
+    right: 0;
+    width: 220px;
   }
 }
