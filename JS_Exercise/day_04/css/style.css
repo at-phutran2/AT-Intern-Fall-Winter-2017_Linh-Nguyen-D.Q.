@@ -12,6 +12,10 @@ button:hover {
   border: 1px solid #555;
 }
 
+.container {
+  margin-top: 30px;
+}
+
 .noti-quantity {
   background-color: red;
   border-radius: 50%;
@@ -75,4 +79,9 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
 }
