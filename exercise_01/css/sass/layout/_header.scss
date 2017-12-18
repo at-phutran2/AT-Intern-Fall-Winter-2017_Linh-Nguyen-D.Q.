@@ -9,7 +9,7 @@
   color: map-get($color, white);
   .logo {
     position: relative;
-    p {
+    span {
       position: absolute;
       bottom: 3px;
       left: 88px;
@@ -47,7 +47,7 @@
   background-color: map-get($color, blue);
 }
 
-.align-icon {
+.js-toggle-menu {
   font-size: 30px !important;
   display: none;
   width: 70px;
@@ -188,7 +188,7 @@
   }
 }
 
-.responsive {
+.active {
   display: block !important;
   .mm-item {
     width: 100%;
@@ -201,8 +201,6 @@
   }
   .social-icon {
     display: none;
-    // margin-top: 15px;
-    // text-align: right;
   }
   .navigation {
     margin-top: 30px;
@@ -238,12 +236,18 @@
       border-top: 1px solid map-get($color, dark-blue);
     }
   }
-  .align-icon {
+  .js-toggle-menu {
     display: inline-block;
   }
   .right-nav {
     position: absolute;
     right: 0;
     width: 220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-form {
+    padding-right: 10px;
   }
 }

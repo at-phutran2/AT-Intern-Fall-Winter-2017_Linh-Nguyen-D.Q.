@@ -240,7 +240,8 @@
     font-weight: 600;
     font-size: 45px;
     line-height: 42px;
-    p {
+    b {
+      display: block;
       font-size: 25px;
       color: map-get($color, o);
       font-weight: 100;

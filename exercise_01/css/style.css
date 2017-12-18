@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +8,7 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -33,8 +20,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -340,7 +326,7 @@ a {
   color: #ffffff; }
   .top-navbar .logo {
     position: relative; }
-    .top-navbar .logo p {
+    .top-navbar .logo span {
       position: absolute;
       bottom: 3px;
       left: 88px;
@@ -378,14 +364,14 @@ a {
   position: relative;
   background-color: #2BD4D9; }
 
-.align-icon {
+.js-toggle-menu {
   font-size: 30px !important;
   display: none;
   width: 70px;
   min-width: 70px;
   padding: 20px 0px;
   text-align: center; }
-  .align-icon:hover {
+  .js-toggle-menu:hover {
     background-color: #00BBC1; }
 
 .main-menu {
@@ -512,9 +498,9 @@ a {
     .mm-submenu li:nth-child(2):hover .mm-submenu-content {
       display: block; }
 
-.responsive {
+.active {
   display: block !important; }
-  .responsive .mm-item {
+  .active .mm-item {
     width: 100%; }
 
 @media (max-width: 767px) {
@@ -552,13 +538,16 @@ a {
       padding: 15px 0px;
       border-top: 1px solid #00BBC1; }
 
-  .align-icon {
+  .js-toggle-menu {
     display: inline-block; }
 
   .right-nav {
     position: absolute;
     right: 0;
     width: 220px; } }
+@media (max-width: 1200px) {
+  .navbar-form {
+    padding-right: 10px; } }
 .footer {
   display: block;
   background-color: #343a40;
@@ -821,7 +810,8 @@ a {
     font-weight: 600;
     font-size: 45px;
     line-height: 42px; }
-    .newest-poster .poster-title p {
+    .newest-poster .poster-title b {
+      display: block;
       font-size: 25px;
       color: #181818;
       font-weight: 100; }
