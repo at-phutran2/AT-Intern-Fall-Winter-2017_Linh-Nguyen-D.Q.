@@ -75,8 +75,8 @@ function createTable(id) {
         if(items[j].index === act.getAttribute('data-id')) {
           let r = confirm("Are you sure to delete?");
           if (r == true) {
-            items.splice(j, 1);
             count = count - items[j].quantity;
+            items.splice(j, 1);
             $noti.innerHTML = count;
             tr.parentNode.removeChild(tr);
             alert('Deleted success!');
