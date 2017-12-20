@@ -54,6 +54,8 @@
   min-width: 70px;
   padding: 20px 0px;
   text-align: center;
+  box-shadow: none;
+  background-color: transparent;
   &:hover {
     background-color: map-get($color, dark-blue);
   }
@@ -97,7 +99,7 @@
 .mm-submenu-content {
   display: none;
   position: absolute;
-  left: 108%;
+  left: 105%;
   top: 0;
   background-color: map-get($color, dark);
   width: 100%;
@@ -112,9 +114,9 @@
   &::after {
     position: absolute;
     content: "";
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-right: 10px solid map-get($color, dark);
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 7px solid map-get($color, dark);
     right: 100%;
     top: 20px;
   }
