@@ -369,7 +369,7 @@ a {
   display: none;
   width: 70px;
   min-width: 70px;
-  padding: 20px 0px;
+  padding: 15px 0px;
   text-align: center;
   box-shadow: none;
   background-color: transparent; }
@@ -833,7 +833,7 @@ a {
 
 .poster-card-item {
   margin-bottom: 63px; }
-  .poster-card-item h4 {
+  .poster-card-item .poster-title {
     font-weight: 100;
     font-family: "Open Sans", sans-serif;
     color: #181818; }

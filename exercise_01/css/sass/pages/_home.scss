@@ -11,7 +11,7 @@
     display: block;
     position: absolute;
     top: 55%;
-    left: 13%;   
+    left: 13%;
   }
   button {
     display: inline-block;
@@ -270,7 +270,7 @@
 
 .poster-card-item {
   margin-bottom: 63px;
-  h4 {
+  .poster-title {
     font-weight: 100;
     font-family: $font-title;
     color: map-get($color, o);
