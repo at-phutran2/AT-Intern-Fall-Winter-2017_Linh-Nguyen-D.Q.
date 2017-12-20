@@ -39,7 +39,7 @@ for(let i = 0; i < prdlength; i++) {
         break;
       }
     }
-    if(checkExist == false){
+    if(checkExist === false){
       items.push(item);
       createTable(item.index);
     }
@@ -74,7 +74,7 @@ function createTable(id) {
       for(let j = 0; j < items.length; j++) {
         if(items[j].index === act.getAttribute('data-id')) {
           let r = confirm("Are you sure to delete?");
-          if (r == true) {
+          if (r === true) {
             count = count - items[j].quantity;
             items.splice(j, 1);
             $noti.innerHTML = count;
