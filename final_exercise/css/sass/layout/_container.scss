@@ -1,0 +1,17 @@
+.site-header-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  &::after {
+    content: " ";
+    display: table;
+  }
+}

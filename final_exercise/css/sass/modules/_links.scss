@@ -1,0 +1,7 @@
+a {
+  text-decoration: none;
+  color: map-get($color, gray_a);
+  &:hover {
+    color: map-get($color, secondary);
+  }
+}

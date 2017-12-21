@@ -1,0 +1,181 @@
+header {
+  display: block;
+  margin-bottom: 40px;
+  &::before {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+  &::after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+  }
+}
+
+.site-header {
+  position: fixed;
+  font-family: $site-font;
+  background-color: map-get($color, dark);
+  @include flexbox();
+  @include justify-content(space-between);
+  @include align-items(center);
+  line-height: 1.5;
+  z-index: 999;
+}
+
+.site-left {
+  height: 17px;
+}
+
+.site-middle {
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  vertical-align: baseline;
+  position: relative;
+  left: 40px;
+  line-height: 1.5;
+  img {
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 0px 16px;
+    height: 24px;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .active {
+    opacity: 1;
+  }
+}
+
+.site-right {
+  color: map-get($color, white);
+  @include flexbox();
+  @include align-items(center);
+  .site-right-item {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    margin: 0px 4px;
+  }
+  .price-amount {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  sup {
+    position: relative;
+    top: -.5em;
+    vertical-align: baseline;
+    font-size: 14px;
+    line-height: 0;
+  }
+  .price-interval {
+    @include flexbox();
+    @include flex-direction(column);
+    font-size: 12px;
+    margin-left: 4px;
+    span {
+      line-height: 1.5;
+    }
+  }
+  .price-notes {
+    margin-top: 2px;
+    font-size: 10px;
+    opacity: .7;
+  }
+  .start-btn {
+    color: map-get($color, white);
+    background-color: map-get($color, green);
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 12px 32px;
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px -1px rgba(0,0,0,.1);
+    line-height: 1.5;
+    &:hover {
+      background-color: map-get($color, green_hover);
+    }
+  }
+}
+
+.site-branding {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  margin-top: 48px;
+  height: 223px;
+  background-image: url("../images/header-watercolor-left.png"), url("../images/header-watercolor-right.png"),;
+  background-repeat: no-repeat,no-repeat;
+  background-position: left top,right top;
+}
+
+.main-navigation {
+  display: block;
+  font-family: $body-font;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 12px 0 0;
+  border-top: 3px double map-get($color, light);
+  border-bottom: 3px double map-get($color, light);
+}
+.primary-menu {
+  text-align: center;
+  line-height: 1.8em;
+}
+.menu-item {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+  &:hover {
+    .sub-menu {
+      display: block;
+    }
+  }
+  &::after {
+    content: "/";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: map-get($color, light);
+  }
+  a {
+    font-size: 14px;
+    padding: 5px 25px;
+    &:hover {
+      color: map-get($color, secondary);
+    }
+  }
+  .active {
+    color: map-get($color, secondary);
+  }
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 20;
+  top: 35px;
+  border: 1px solid map-get($color, light);
+  margin: 0px 0px 0px 4px;
+}
+.sub-menu-item {
+  border-bottom: 1px solid map-get($color, light);
+  display: block;
+  a {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 12px 20px;
+  }
+}

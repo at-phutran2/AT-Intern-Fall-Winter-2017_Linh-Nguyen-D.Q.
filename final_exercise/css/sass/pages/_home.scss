@@ -1,0 +1,257 @@
+.main-content {
+  display: block;
+}
+
+.carousel {
+  display: block;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-image: url("../images/banner-overlay-top-tile.png");
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 119px;
+    width: 100%;
+    background-image: url("../images/banner-overlay-bottom-tile.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
+
+.intro {
+  padding: 10px;
+  text-align: center;
+}
+.intro-content {
+  padding: 21px 0px;
+  margin-top: 30px;
+  border-top: 1px solid map-get($color, light);
+  border-bottom: 1px solid map-get($color, light);
+  p {
+    font-size: 17px;
+    line-height: 1.8em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+  }
+}
+
+.elementor-row {
+  @include flexbox();
+}
+.elementor-left {
+  padding: 50px 30px 0px 0px; 
+}
+.elementor-left-content {
+  position: relative;
+  border: 1px solid map-get($color, light);
+  margin-bottom: 100px;
+}
+.entry-header {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  min-height: 360px;
+  position: relative;
+}
+.elementor-widget {
+  position: absolute;
+  right: 20px;
+  text-align: left;
+  z-index: 2;
+  padding: 10px 10px 0;
+  a {
+    display: table;
+    clear: both;
+    width: 100%;
+    margin: 6px 0 11px;
+    &:hover {
+      color: map-get($color, secondary);
+      i {
+        color: map-get($color, gray_a);
+      }
+    }
+    i {
+      display: table-cell;
+      width: 50%;
+      color: map-get($color, gray_widget);
+      font-size: 1.2em;
+    }
+    span {
+      display: table-cell;
+      width: 50%;
+    }
+    .share {
+      font-size: 0.8em;
+    }
+  }
+}
+.elementor-image {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 219px;
+    height: 151px;
+    background-image: url("../images/blog-corner.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+}
+.elementor-title {
+  margin-top: -66px;
+  background-image: url("../images/blog-overlay.png");
+  background-repeat: repeat-x;
+  background-position: right top;
+  position: relative;
+  padding: 2em 10px 1.5em;
+  padding-top: 120px;
+  .entry-title {
+    font-family: $title-font;
+    font-size: 45px;
+    font-weight: 400;
+    a {
+      color: map-get($color, black);      
+    }
+  }
+  .entry-meta {
+    color: map-get($color, blue);
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.entry-content {
+  font-family: $body-font;
+  margin: 0 1.5em;
+  padding-bottom: 48px;
+  &::before {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+  &::after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+  }
+}
+.blog-button {
+  font-family: $title-font;
+  position: absolute;
+  bottom: -21px;
+  text-align: center;
+  width: 100%;
+  a {
+    background-color: map-get($color, primary);
+    color: map-get($color, white);
+    font-size: 27px;
+    font-weight: 400;
+    padding: 10px 39px 0;
+    transition: background-color 1s;
+    line-height: 1;
+    &:hover {
+      background-color: map-get($color, secondary);
+    }
+  }
+}
+
+.elementor-right {
+  padding: 10px;
+}
+.elementor-right-content {
+  margin: 40px 0 60px;
+  padding: 0 2em 1.5em;
+  border: 1px solid map-get($color, light);
+}
+.entry-title {
+  text-align: center;
+  margin-top: -34px;
+  h3 {
+    position: relative;
+    padding: 0 15px;
+    display: inline-block;
+    font-family: $title-font;
+    font-size: 45px;
+    font-weight: 400;
+    z-index: 10;
+    margin: 0;
+    clear: both;
+    color: map-get($color, primary);
+    line-height: 1.6;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      display: block;
+      left: 0;
+      right: 0;
+      top: 33px;
+      z-index: -1;
+      background-color: map-get($color, white);
+    }
+  }
+}
+.entry-description {
+  padding: 10px 0 10px 10px;
+  p {
+    margin-bottom: 10px;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.entry-profile {
+  padding: 10px;
+  text-align: center;
+  img {
+    border-radius: 50%;    
+  }
+}
+
+.category-item {
+  display: block;
+  a {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 5px;
+    display: block;
+    line-height: 1.8em;
+  }
+}
+
+.tags {
+  display: block;
+  text-transform: uppercase;
+  padding-top: 20px;
+  a {
+    display: inline-block;
+    font-size: 8pt;
+    padding: 0 9px 10px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.instagram-item {
+  padding: 0;
+  a {
+    padding: 12px 5px;
+    display: block;
+  }
+}
