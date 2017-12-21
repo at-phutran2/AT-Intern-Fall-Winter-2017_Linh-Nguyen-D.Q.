@@ -735,9 +735,11 @@ header {
 
 .entry-content {
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 1.5em;
-  margin-top: 1em;
-  padding-bottom: 48px; }
+  padding-bottom: 48px;
+  margin: 0 1.5em; }
+  .entry-content p {
+    margin-bottom: 1.5em;
+    margin-top: 1em; }
   .entry-content::before {
     content: "";
     display: table;

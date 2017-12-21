@@ -134,9 +134,12 @@
 
 .entry-content {
   font-family: $body-font;
-  margin-bottom: 1.5em;
-  margin-top: 1em;
   padding-bottom: 48px;
+  margin: 0 1.5em;
+  p {
+    margin-bottom: 1.5em;
+    margin-top: 1em;    
+  }
   &::before {
     content: "";
     display: table;
