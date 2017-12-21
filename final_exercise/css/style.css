@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Zeyada");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -569,49 +570,47 @@ header {
     opacity: 0.8; }
 
 .capchar {
-  display: block;
-  margin-top: 25px; }
-
-.capchar-left {
-  display: inline-block;
-  color: #ffffff;
-  background-color: #4a90e2;
-  padding: 8px 8px;
-  float: left; }
-  .capchar-left p {
-    font-size: 13px;
-    margin: 0; }
-    .capchar-left p b {
-      font-weight: 600; }
-  .capchar-left span {
-    font-size: 10px;
-    padding-right: 5px; }
-    .capchar-left span a {
-      color: #ffffff;
-      padding: 0; }
-
-.capchar-right {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+  margin-top: 25px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08); }
+
+.capchar-left {
+  background: #4a90e2;
+  color: white;
   display: inline-block;
-  background-image: url("https://www.gstatic.com/recaptcha/api2/logo_48.png");
-  background-repeat: no-repeat;
-  width: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 8px 16px;
+  white-space: nowrap; }
+  .capchar-left p {
+    margin: 0;
+    font-size: 13px; }
+    .capchar-left p strong {
+      font-weight: 500; }
+  .capchar-left span {
+    padding-right: 5px; }
+  .capchar-left a {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 400; }
+
+.capchar-right {
+  display: inline-block;
   height: 63px;
-  background-position: center;
+  vertical-align: top;
   background-color: #ffffff; }
+  .capchar-right .capchar-right-image {
+    background-image: url("https://www.gstatic.com/recaptcha/api2/logo_48.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px 12px 0 12px; }
 
 .main-content {
   display: block; }
